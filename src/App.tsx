@@ -34,7 +34,7 @@ function AppShell() {
 
   useEffect(() => {
     // End loading after a small delay to avoid flicker and allow assets to settle
-    const t = setTimeout(() => setRouteLoading(false), 450);
+    const t = setTimeout(() => setRouteLoading(false), 600);
     return () => clearTimeout(t);
   }, [location.key]);
 

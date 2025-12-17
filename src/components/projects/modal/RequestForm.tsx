@@ -104,7 +104,7 @@ export const RequestForm = ({ formLogic, onClose, forwardedRef }: RequestFormPro
                             </button>
 
                             {currencyDropdownOpen && (
-                                <div className="absolute z-10 mt-1 w-full rounded-lg border border-slate-200 bg-white max-h-60 overflow-y-auto shadow-lg">
+                                <div className="absolute z-10 mt-1 w-full rounded-lg border border-slate-200 bg-white max-h-60 overflow-y-auto shadow-sm">
                                     {currencies.map((currency) => (
                                         <button
                                             key={currency.code}
@@ -168,7 +168,7 @@ export const RequestForm = ({ formLogic, onClose, forwardedRef }: RequestFormPro
                     </button>
                     <button
                         type="submit"
-                        className="flex-1 group inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-green-500 to-green-600 px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-green-500/20 transition-all hover:scale-[1.02] active:scale-[0.98]"
+                        className="flex-1 group inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-green-500 to-green-600 px-6 py-3.5 text-sm font-bold text-white shadow-sm shadow-green-500/20 transition-all hover:scale-[1.02] active:scale-[0.98]"
                     >
                         <FaWhatsapp className="h-5 w-5" />
                         <span>Request via WhatsApp</span>
