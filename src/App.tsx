@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route, useLocation, useNavigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation, useNavigate } from "react-router-dom";
 import { RiMenuLine } from "react-icons/ri";
 import type { Section } from "./hooks/useSection";
 import Aside from "./components/Aside";
@@ -90,10 +90,10 @@ function AppShell() {
 
 export default function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <SidebarProvider>
         <AppShell />
       </SidebarProvider>
-    </HashRouter>
+    </BrowserRouter>
   );
 }

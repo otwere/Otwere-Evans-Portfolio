@@ -23,9 +23,9 @@ export default function About() {
           <div className="mb-12 text-center">
             <div className="inline-flex items-center gap-2">
               <div className="h-px w-12 bg-gradient-to-r from-transparent via-indigo-500 to-transparent"></div>
-              <h2 className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-3xl sm:text-3xl font-bold text-transparent">
+              <h1 className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-3xl sm:text-3xl font-bold text-transparent">
                 About Me
-              </h2>
+              </h1>
               <div className="h-px w-12 bg-gradient-to-r from-transparent via-purple-500 to-transparent"></div>
             </div>
 
