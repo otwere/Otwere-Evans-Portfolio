@@ -38,7 +38,7 @@ export default function About() {
             <div className="absolute -bottom-6 -left-6 h-12 w-12 rounded-full bg-gradient-to-br from-cyan-400 to-blue-400"></div>
 
             <p className="relative text-lg leading-relaxed text-slate-700">
-              I'm <span className="font-bold text-indigo-600">Otwere Evans</span>,Front-End Software Developer dedicated to building high-performance user interfaces. I transform ideas into seamless digital experiences using React, TypeScript, and Next.js to deliver exceptional interactions. With a strong foundation in UI/UX and performance optimization, I develop scalable, consumer-centric applications using Agile methodologies. As I grow, I'm expanding into full-stack development to contribute innovative solutions across startups and enterprises.
+              I'm <strong className="font-bold text-indigo-600">Otwere Evans</strong>,Front-End Software Developer dedicated to building high-performance user interfaces. I transform ideas into seamless digital experiences using React, TypeScript, and Next.js to deliver exceptional interactions. With a strong foundation in UI/UX and performance optimization, I develop scalable, consumer-centric applications using Agile methodologies. As I grow, I'm expanding into full-stack development to contribute innovative solutions across startups and enterprises.
             </p>
 
             {/* Personal Info Grid */}
@@ -80,9 +80,9 @@ export default function About() {
 
           {/* Skills Section */}
           <div className="mb-12">
-            <h3 className="mb-8 text-center text-3xl font-bold text-slate-800">
+            <h2 className="mb-8 text-center text-3xl font-bold text-slate-800">
               Technical <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">Expertise</span>
-            </h3>
+            </h2>
 
             <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
               {[
@@ -135,7 +135,7 @@ export default function About() {
                     <div className={`flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br ${category.gradient} text-white`}>
                       {category.icon}
                     </div>
-                    <h4 className="text-lg font-bold text-slate-800">{category.title}</h4>
+                    <h3 className="text-lg font-bold text-slate-800">{category.title}</h3>
                   </div>
                   <div className="flex flex-wrap gap-2">
                     {category.skills.map((skill) => (
@@ -163,7 +163,7 @@ export default function About() {
                 <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-emerald-500 to-teal-500 text-white">
                   <FaGraduationCap className="h-6 w-6" />
                 </div>
-                <h3 className="text-2xl font-bold text-slate-800">Education</h3>
+                <h2 className="text-2xl font-bold text-slate-800">Education</h2>
               </div>
 
               <div className="relative ml-3 border-l-2 border-indigo-200 space-y-8 pb-8">
@@ -218,7 +218,7 @@ export default function About() {
                           {/* <div className={`absolute -bottom-1 -right-1 h-4 w-4 rounded-full bg-gradient-to-br ${edu.accent}`}></div> */}
                         </div>
                         <div>
-                          <h4 className="font-bold text-slate-800">{edu.org}</h4>
+                          <h3 className="font-bold text-slate-800">{edu.org}</h3>
                           <p className="text-sm font-medium text-indigo-600">{edu.role}</p>
                         </div>
                       </div>
@@ -244,7 +244,7 @@ export default function About() {
                 <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-orange-500 to-red-500 text-white">
                   <FaBriefcase className="h-6 w-6" />
                 </div>
-                <h3 className="text-2xl font-bold text-slate-800">Experience</h3>
+                <h2 className="text-2xl font-bold text-slate-800">Experience</h2>
               </div>
 
               <div className="relative ml-3 border-l-2 border-indigo-200 space-y-8 pb-8">
@@ -331,7 +331,7 @@ export default function About() {
                           {/* <div className={`absolute -bottom-1 -right-1 h-4 w-4 rounded-full bg-gradient-to-br ${exp.accent}`}></div> */}
                         </div>
                         <div>
-                          <h4 className="font-bold text-slate-800">{exp.org}</h4>
+                          <h3 className="font-bold text-slate-800">{exp.org}</h3>
                           <p className="text-sm font-medium text-indigo-600">{exp.role}</p>
                         </div>
                       </div>

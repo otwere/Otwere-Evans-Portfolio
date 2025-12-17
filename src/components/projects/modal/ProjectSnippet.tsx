@@ -11,7 +11,7 @@ export const ProjectSnippet = ({ project }: ProjectSnippetProps) => {
             <div className="flex items-center gap-3">
                 <img
                     src={project?.image}
-                    alt={project?.title}
+                    alt={project?.title || "Project Thumbnail"}
                     className="h-12 w-24 rounded-md object-cover border border-slate-200"
                     onError={(e) => {
                         e.currentTarget.src =
@@ -19,9 +19,9 @@ export const ProjectSnippet = ({ project }: ProjectSnippetProps) => {
                     }}
                 />
                 <div>
-                    <h4 className="font-semibold text-slate-800 text-sm line-clamp-1">
+                    <h3 className="font-semibold text-slate-800 text-sm line-clamp-1">
                         {project?.title}
-                    </h4>
+                    </h3>
                     <div className="flex items-center gap-2 mt-1">
                         <FaGithub className="h-3 w-3 text-slate-500" />
                         <span className="text-xs text-slate-600">GitHub Repository</span>

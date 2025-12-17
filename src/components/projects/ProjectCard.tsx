@@ -44,9 +44,9 @@ export const ProjectCard = memo(({ project, index, onOpenModal }: ProjectCardPro
 
             {/* Content */}
             <div className="p-5 sm:p-6">
-                <h3 className="text-lg sm:text-lg font-bold text-slate-800 mb-2 line-clamp-2 group-hover:text-indigo-600 transition-colors duration-300">
+                <h2 className="text-lg sm:text-lg font-bold text-slate-800 mb-2 line-clamp-2 group-hover:text-indigo-600 transition-colors duration-300">
                     {project.title}
-                </h3>
+                </h2>
 
                 <div className="space-y-1 mb-3 text-sm text-slate-600">
                     {project.description.split('\n').map((line, i) => {
@@ -64,9 +64,9 @@ export const ProjectCard = memo(({ project, index, onOpenModal }: ProjectCardPro
 
                         if (trimmed.endsWith(':')) {
                             return (
-                                <h4 key={i} className="font-bold text-base text-indigo-900 pt-0 pb-1">
+                                <h3 key={i} className="font-bold text-base text-indigo-900 pt-0 pb-1">
                                     {trimmed}
-                                </h4>
+                                </h3>
                             );
                         }
 

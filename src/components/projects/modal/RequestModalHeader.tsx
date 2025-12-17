@@ -14,9 +14,9 @@ export const RequestModalHeader = ({ title, onClose }: RequestModalHeaderProps) 
                         <FaCode className="h-5 w-5 text-white" />
                     </div>
                     <div>
-                        <h3 className="text-lg font-bold text-slate-800 tracking-tight">
+                        <h2 className="text-lg font-bold text-slate-800 tracking-tight">
                             Request Source Code
-                        </h3>
+                        </h2>
                         <p className="text-xs font-medium text-slate-500 whitespace-nowrap  max-w-[205px]">{title}</p>
                     </div>
                 </div>
