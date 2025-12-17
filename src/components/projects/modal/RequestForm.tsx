@@ -44,7 +44,7 @@ export const RequestForm = ({ formLogic, onClose, forwardedRef }: RequestFormPro
                         value={formData.name}
                         onChange={(e) => setters.setName(e.target.value)}
                         placeholder="Your Name"
-                        className="w-full rounded-xl border-0 bg-slate-50 px-4 py-3.5 text-sm font-medium text-slate-800 ring-1 ring-slate-200 transition-all placeholder:text-slate-400 focus:bg-white focus:ring-2 focus:ring-indigo-500 hover:bg-slate-50/80"
+                        className="w-full rounded-xl border-0 bg-slate-50 px-4 py-3.5 text-sm font-medium text-slate-800 ring-0 ring-slate-200 transition-all placeholder:text-slate-400 focus:bg-white focus:ring-2 focus:ring-indigo-500 hover:bg-slate-50/80"
                     />
                 </div>
                 <div className="space-y-2">
@@ -57,7 +57,7 @@ export const RequestForm = ({ formLogic, onClose, forwardedRef }: RequestFormPro
                         value={formData.email}
                         onChange={(e) => setters.setEmail(e.target.value)}
                         placeholder="Valid Email"
-                        className="w-full rounded-xl border-0 bg-slate-50 px-4 py-3.5 text-sm font-medium text-slate-800 ring-1 ring-slate-200 transition-all placeholder:text-slate-400 focus:bg-white focus:ring-2 focus:ring-indigo-500 hover:bg-slate-50/80"
+                        className="w-full rounded-xl border-0 bg-slate-50 px-4 py-3.5 text-sm font-medium text-slate-800 ring-0 ring-slate-200 transition-all placeholder:text-slate-400 focus:bg-white focus:ring-2 focus:ring-indigo-500 hover:bg-slate-50/80"
                     />
                 </div>
             </div>
@@ -72,7 +72,7 @@ export const RequestForm = ({ formLogic, onClose, forwardedRef }: RequestFormPro
                     value={formData.phone}
                     onChange={(e) => setters.setPhone(e.target.value)}
                     placeholder="+254 733 443 224"
-                    className="w-full rounded-xl border-0 bg-slate-50 px-4 py-3.5 text-sm font-medium text-slate-800 ring-1 ring-slate-200 transition-all placeholder:text-slate-400 focus:bg-white focus:ring-2 focus:ring-indigo-500 hover:bg-slate-50/80"
+                    className="w-full rounded-xl border-0 bg-slate-50 px-4 py-3.5 text-sm font-medium text-slate-800 ring-0 ring-slate-200 transition-all placeholder:text-slate-400 focus:bg-white focus:ring-2 focus:ring-indigo-500 hover:bg-slate-50/80"
                 />
             </div>
 
@@ -90,7 +90,7 @@ export const RequestForm = ({ formLogic, onClose, forwardedRef }: RequestFormPro
                     <div className="relative flex-1" ref={currencyDropdownRef}>
                         <button
                             type="button"
-                            className="flex items-center justify-center gap-2 w-full rounded-xl border-0 bg-slate-50 ring-1 ring-slate-200 px-4 py-3 text-sm font-medium text-slate-800 outline-none transition-all hover:bg-slate-50/80 focus:bg-white focus:ring-2 focus:ring-indigo-500"
+                            className="flex items-center justify-center gap-2 w-full rounded-xl border-0 bg-slate-50 ring-0 ring-slate-200 px-4 py-3 text-sm font-medium text-slate-800 outline-none transition-all hover:bg-slate-50/80 focus:bg-white focus:ring-2 focus:ring-indigo-500"
                             onClick={() => setCurrencyDropdownOpen(!currencyDropdownOpen)}
                         >
                             <FaGlobe className="h-4 w-4 text-indigo-500" />
@@ -143,9 +143,9 @@ export const RequestForm = ({ formLogic, onClose, forwardedRef }: RequestFormPro
                             required
                             value={formData.budget}
                             onChange={handlers.handleBudgetChange}
-                            placeholder="1,000.00"
+                            placeholder="Enter Amount"
                             inputMode="decimal"
-                            className="w-full rounded-xl border-0 bg-slate-50 pl-10 pr-4 py-3.5 text-sm font-medium text-slate-800 ring-1 ring-slate-200 transition-all placeholder:text-slate-400 focus:bg-white focus:ring-2 focus:ring-indigo-500 hover:bg-slate-50/80"
+                            className="w-full rounded-xl border-0 bg-slate-50 pl-10 pr-4 py-3.5 text-sm font-medium text-slate-800 ring-0 ring-slate-200 transition-all placeholder:text-slate-400 focus:bg-white focus:ring-2 focus:ring-indigo-500 hover:bg-slate-50/80"
                         />
                     </div>
                 </div>

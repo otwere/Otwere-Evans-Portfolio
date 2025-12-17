@@ -39,11 +39,11 @@ export default function Projects() {
           {/* Header */}
           <div className="mb-12 text-center">
             <div className="inline-flex items-center gap-2">
-              <div className="h-px w-12 bg-gradient-to-r from-transparent via-indigo-500 to-transparent"></div>
-              <h2 className="bg-gradient-to-r from-indigo-600 via-purple-600 to-indigo-600 bg-clip-text text-3xl font-bold text-transparent">
+              <div className="h-1 w-8 sm:w-16 rounded-full bg-gradient-to-r from-transparent via-indigo-500 to-transparent"></div>
+              <h2 className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-3xl sm:text-3xl font-bold text-transparent">
                 Featured Projects
               </h2>
-              <div className="h-px w-12 bg-gradient-to-r from-transparent via-purple-500 to-transparent"></div>
+              <div className="h-1 w-8 sm:w-16 rounded-full bg-gradient-to-r from-transparent via-purple-500 to-transparent"></div>
             </div>
           </div>
 
