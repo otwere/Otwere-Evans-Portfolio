@@ -135,7 +135,7 @@ export default function About() {
                     <div className={`flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br ${category.gradient} text-white`}>
                       {category.icon}
                     </div>
-                    <h4 className="text-xl font-bold text-slate-800">{category.title}</h4>
+                    <h4 className="text-lg font-bold text-slate-800">{category.title}</h4>
                   </div>
                   <div className="flex flex-wrap gap-2">
                     {category.skills.map((skill) => (

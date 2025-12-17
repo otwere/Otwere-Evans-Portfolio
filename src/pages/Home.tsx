@@ -19,7 +19,7 @@ export default function Home() {
             />
           </div>
           <h1 className="text-3xl font-bold text-slate-800">Otwere Evans</h1>
-          <p className="mt-2 text-xl font-medium text-slate-600">Software Developer, Specializing in Front-end Development</p>
+          <p className="mt-2 text-lg sm:text-lg font-medium text-slate-600">Software Developer, Specializing in Front-end Development</p>
           <div className="mt-5 flex items-center justify-center gap-3">
             <a aria-label="LinkedIn" rel="noopener noreferrer" href="https://www.linkedin.com/in/otwere-evans/" target="_blank" className="link-icon">
               <i className="fa fa-linkedin" />
