@@ -51,7 +51,7 @@ const TECH_BADGES = [
   { icon: SiReact, label: "React.js", color: "text-cyan-500" },
   { icon: SiTypescript, label: "TS", color: "text-blue-600" },
   { icon: SiNextdotjs, label: "Next.js", color: "text-slate-900" },
-  { icon: SiTailwindcss, label: "Tailwind", color: "text-cyan-400" },
+  { icon: SiTailwindcss, label: "Tailwindcss", color: "text-cyan-400" },
 ];
 
 // --- Sub-Components ---
@@ -62,7 +62,7 @@ const UserProfile = memo(({ collapsed, onNavigate }: { collapsed: boolean; onNav
     <div className={`relative ${collapsed ? 'flex justify-center' : ''}`}>
       <button
         onClick={() => onNavigate("home")}
-        className={`inline-flex items-center gap-3 group text-left ${collapsed ? 'flex-col' : ''}`}
+        className={`inline-flex items-center gap-3 group text-left cursor-pointer ${collapsed ? 'flex-col' : ''}`}
       >
         <div className="relative">
           <div className={`${collapsed ? 'h-12 w-10 mt-2' : 'h-12 w-12'} rounded-2xl bg-gradient-to-r from-indigo-600 to-purple-600 flex items-center justify-center transition-all duration-300 group-hover:scale-95 shadow-indigo-500/20`}>
@@ -74,7 +74,7 @@ const UserProfile = memo(({ collapsed, onNavigate }: { collapsed: boolean; onNav
             <h1 className="text-2xl font-bold text-slate-800">
               Otwere Evans
             </h1>
-            <p className="text-sm font-medium text-slate-500 -mt-1">Frontend Developer</p>
+            <p className="text-sm font-medium text-slate-500 -mt-1">Frontend Software Developer</p>
           </div>
 
         )}
@@ -123,7 +123,7 @@ const NavItem = memo(({
   return (
     <li>
       <button
-        className={`group relative flex items-center ${collapsed ? 'justify-center px-3' : 'gap-4 px-4'} w-full py-3 text-left transition-all duration-300 rounded-lg ${isActive
+        className={`group relative flex items-center cursor-pointer ${collapsed ? 'justify-center px-3' : 'gap-4 px-4'} w-full py-3 text-left transition-all duration-300 rounded-lg ${isActive
           ? "bg-indigo-50 text-indigo-700"
           : "text-slate-600 hover:bg-slate-100 hover:text-slate-900"
           }`}
@@ -185,7 +185,7 @@ export default function Sidebar({ current, onNavigate }: Props) {
         <div className="absolute inset-0 overflow-y-auto p-4 md:p-6 scrollbar-thin scrollbar-thumb-slate-200 scrollbar-track-transparent">
           {/* Mobile Close Button */}
           <button
-            className="absolute right-3 top-3 z-30 md:hidden rounded-lg p-2 hover:bg-slate-200 transition-colors"
+            className="absolute right-3 top-3 z-30 md:hidden rounded-lg p-2 hover:bg-slate-200  transition-colors"
             onClick={closeMobile}
             aria-label="Close navigation"
           >
@@ -244,7 +244,7 @@ export default function Sidebar({ current, onNavigate }: Props) {
                     href={link.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`group ${isCollapsed ? 'p-3' : 'p-3.5'} rounded-xl bg-white border border-slate-200 text-center hover:bg-slate-50 transition-all duration-300 hover:scale-95`}
+                    className={`group ${isCollapsed ? 'p-3' : 'p-3.5'} rounded-xl bg-white border border-slate-200 text-center cursor-pointer hover:bg-slate-50 transition-all duration-300 hover:scale-95`}
                     aria-label={link.label}
                     title={link.label}
                   >

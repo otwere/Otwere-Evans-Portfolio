@@ -2,7 +2,7 @@ import { FaCode, FaCogs, FaGlobe, FaDownload, FaCalendar, FaGraduationCap, FaBri
 import { SiJavascript, SiHtml5, SiRuby, SiTypescript, SiPython, SiMongodb, SiMysql, SiNodedotjs, SiGraphql, SiReact, SiNextdotjs, SiTailwindcss, SiLinux, SiGithub, SiExpress } from 'react-icons/si';
 import { RiMailLine, RiMapPinLine, RiUserLine, RiBookLine } from 'react-icons/ri';
 import { IoServerOutline } from 'react-icons/io5';
-import { MdDataObject, MdApi, MdSettings, MdBuild, MdLeaderboard } from 'react-icons/md';
+import { MdDataObject, MdApi, MdSettings, MdBuild, MdLeaderboard, MdChat, MdUpdate, MdTimer, MdRecordVoiceOver } from 'react-icons/md';
 import { SEO } from "../components/SEO";
 
 export default function About() {
@@ -84,7 +84,7 @@ export default function About() {
               Technical <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">Expertise</span>
             </h2>
 
-            <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4">
               {[
                 {
                   title: "Languages",
@@ -100,19 +100,6 @@ export default function About() {
                   gradient: "from-indigo-500 to-blue-500"
                 },
                 {
-                  title: "Concepts & Soft Skills",
-                  icon: <FaCogs className="text-2xl" />,
-                  skills: [
-                    { name: "Data Structures & Algorithms", icon: <MdDataObject /> },
-                    { name: "RESTful APIs", icon: <MdApi /> },
-                    { name: "CI/CD", icon: <IoServerOutline /> },
-                    { name: "Problem Solving", icon: <MdSettings /> },
-                    { name: "Collaboration", icon: <MdLeaderboard /> },
-                    { name: "Object-Oriented Programming (OOP)", icon: <MdBuild /> },
-                  ],
-                  gradient: "from-purple-500 to-pink-500"
-                },
-                {
                   title: "Frameworks & Tools",
                   icon: <FaGlobe className="text-2xl" />,
                   skills: [
@@ -124,6 +111,32 @@ export default function About() {
                     { name: "Git & Github", icon: <SiGithub /> },
                   ],
                   gradient: "from-cyan-500 to-blue-500"
+                },
+                {
+                  title: "Core Concepts",
+                  icon: <FaCogs className="text-2xl" />,
+                  skills: [
+                    { name: "Data Structures & Algorithms", icon: <MdDataObject /> },
+                    { name: "RESTful APIs", icon: <MdApi /> },
+                    { name: "CI/CD", icon: <IoServerOutline /> },
+                    { name: "Object-Oriented Programming (OOP)", icon: <MdBuild /> },
+                    { name: "UI/UX Design Principles", icon: <MdSettings /> },
+                    { name: "Agile Methodologies", icon: <MdLeaderboard /> },
+                  ],
+                  gradient: "from-purple-500 to-pink-500"
+                },
+                {
+                  title: "Soft Skills",
+                  icon: <FaBriefcase className="text-2xl" />,
+                  skills: [
+                    { name: "Problem Solving", icon: <MdSettings /> },
+                    { name: "Collaboration", icon: <MdLeaderboard /> },
+                    { name: "Effective Communication", icon: <MdChat /> },
+                    { name: "Adaptability & Learning", icon: <MdUpdate /> },
+                    { name: "Time Management", icon: <MdTimer /> },
+                    { name: "Mentorship & Leadership", icon: <MdRecordVoiceOver /> },
+                  ],
+                  gradient: "from-emerald-500 to-teal-500"
                 }
               ].map((category) => (
                 <div
