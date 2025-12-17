@@ -215,7 +215,7 @@ export default function About() {
                       <div className="mt-4 flex items-center gap-4">
                         <div className="relative">
                           <img src={edu.orgImg} alt={edu.org} className="h-12 w-12 rounded-xl object-cover" />
-                          <div className={`absolute -bottom-1 -right-1 h-4 w-4 rounded-full bg-gradient-to-br ${edu.accent}`}></div>
+                          {/* <div className={`absolute -bottom-1 -right-1 h-4 w-4 rounded-full bg-gradient-to-br ${edu.accent}`}></div> */}
                         </div>
                         <div>
                           <h4 className="font-bold text-slate-800">{edu.org}</h4>
@@ -328,7 +328,7 @@ export default function About() {
                       <div className="mt-4 flex items-center gap-4">
                         <div className="relative">
                           <img src={exp.orgImg} alt={exp.org} className="h-12 w-12 rounded-xl object-cover" />
-                          <div className={`absolute -bottom-1 -right-1 h-4 w-4 rounded-full bg-gradient-to-br ${exp.accent}`}></div>
+                          {/* <div className={`absolute -bottom-1 -right-1 h-4 w-4 rounded-full bg-gradient-to-br ${exp.accent}`}></div> */}
                         </div>
                         <div>
                           <h4 className="font-bold text-slate-800">{exp.org}</h4>
