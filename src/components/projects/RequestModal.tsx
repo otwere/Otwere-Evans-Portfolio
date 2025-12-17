@@ -41,7 +41,7 @@ export const RequestModal = ({ isOpen, project, onClose }: RequestModalProps) =>
         >
             <div className="flex min-h-full items-end sm:items-center justify-center p-0 sm:p-4">
                 <div
-                    className="relative w-full h-[100dvh] sm:h-auto max-w-3xl rounded-none sm:rounded-xl bg-white border-0 sm:border border-slate-200 animate-slideUp shadow-none sm:shadow-none flex flex-col sm:max-h-[90vh]"
+                    className="relative w-full h-[100dvh] sm:h-auto max-w-3xl rounded-none sm:rounded-xl bg-white border-0 sm:border border-slate-200 animate-slideUp shadow-none sm:shadow-none flex flex-col sm:max-h-[90vh] overflow-hidden"
                     onClick={(e) => e.stopPropagation()}
                 >
                     <RequestModalHeader

@@ -31,7 +31,7 @@ export const RequestForm = ({ formLogic, onClose, forwardedRef }: RequestFormPro
     }, []);
 
     return (
-        <form ref={forwardedRef} className="flex flex-col h-full overflow-hidden bg-slate-50 relative" onSubmit={handlers.submitBid}>
+        <form ref={forwardedRef} className="flex flex-col flex-1 min-h-0 overflow-hidden bg-slate-50 relative" onSubmit={handlers.submitBid}>
             {/* Scrollable Form Content */}
             <div className="flex-1 overflow-y-auto p-6 space-y-4 scroll-smooth">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

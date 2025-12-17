@@ -7,7 +7,7 @@ type RequestModalHeaderProps = {
 
 export const RequestModalHeader = ({ title, onClose }: RequestModalHeaderProps) => {
     return (
-        <div className="sticky top-0 z-20 px-4 sm:px-6 py-4 bg-white/80 backdrop-blur-md border-b border-slate-100 rounded-t-2xl sm:rounded-t-xl transition-all">
+        <div className="sticky top-0 z-20 px-4 sm:px-6 py-4 bg-white/80 backdrop-blur-md border-b border-slate-100 rounded-none sm:rounded-t-xl transition-all">
             <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
                     <div className="p-2.5 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-600 shadow-sm shadow-indigo-500/20">

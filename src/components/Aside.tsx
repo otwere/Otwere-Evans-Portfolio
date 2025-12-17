@@ -80,7 +80,7 @@ const UserProfile = memo(({ collapsed, onNavigate }: { collapsed: boolean; onNav
         )}
       </button>
     </div>
-    <div className="border-b border-slate-200 mt-2"></div>
+    <div className="border-b border-slate-200 mt-2.5"></div>
 
     {!collapsed && (
       <div className="my-2 pb-2 overflow-hidden w-full relative">
