@@ -39,9 +39,9 @@ export const RequestModal = ({ isOpen, project, onClose }: RequestModalProps) =>
             ref={modalRef}
             className="fixed inset-0 z-50 overflow-y-auto bg-slate-900/60 backdrop-blur-sm animate-fadeIn"
         >
-            <div className="flex min-h-full items-end sm:items-center justify-center p-0 sm:p-4">
+            <div className="flex min-h-full items-end sm:items-center justify-center p-3 sm:p-4">
                 <div
-                    className="relative w-full h-[80dvh] sm:h-auto max-w-3xl rounded-none sm:rounded-xl bg-white border-0 sm:border border-slate-200 animate-slideUp shadow-none sm:shadow-none flex flex-col max-h-[80vh] sm:max-h-[85vh]"
+                    className="relative w-full h-[80dvh] sm:h-auto max-w-3xl rounded-2xl sm:rounded-xl bg-white border-0 sm:border border-slate-200 animate-slideUp shadow-none sm:shadow-none flex flex-col max-h-[80vh] sm:max-h-[85vh]"
                     onClick={(e) => e.stopPropagation()}
                 >
                     <RequestModalHeader
