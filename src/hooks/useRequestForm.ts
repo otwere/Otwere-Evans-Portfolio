@@ -53,16 +53,19 @@ export const useRequestForm = (project: Project | null, onClose: () => void) => 
 
         // WhatsApp Message Construction
         const msg =
-            `🚀 *New Project Request*\n\n` +
+            `━━━━━━━━━━━━━━━━━━━━━━━━\n` +
+            `*SOURCE CODE REQUEST*\n` +
+            `━━━━━━━━━━━━━━━━━━━━━━━━\n\n` +
             `*Project:* ${projectTitle}\n\n` +
-            `👤 *Client Details*\n` +
-            `*Name:* ${trimmedName}\n` +
-            `*Email:* ${trimmedEmail}\n` +
-            `*Phone:* ${trimmedPhone}\n\n` +
-            `💰 *Budget Offer*\n` +
+            `*Contact Information:*\n` +
+            `• Name: ${trimmedName}\n` +
+            `• Email: ${trimmedEmail}\n` +
+            `• Phone: ${trimmedPhone}\n\n` +
+            `*Budget Offer:*\n` +
             `${selectedCurrency.symbol}${budget} ${selectedCurrency.code}\n\n` +
-            (projectLink ? `🔗 *Link:*\n${projectLink}\n\n` : "") +
-            `_Sent via Portfolio_`;
+            (projectLink ? `*Project Link:*\n${projectLink}\n\n` : "") +
+            `━━━━━━━━━━━━━━━━━━━━━━━━\n` +
+            `Sent via Portfolio Request Form`;
 
         const url = `https://wa.me/254733443224?text=${encodeURIComponent(msg)}`;
         window.open(url, "_blank", "noopener,noreferrer");
