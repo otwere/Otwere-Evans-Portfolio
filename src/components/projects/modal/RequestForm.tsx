@@ -135,7 +135,7 @@ export const RequestForm = ({ formLogic, onClose, forwardedRef }: RequestFormPro
 
                         {/* Budget Input */}
                         <div className="flex-1 relative">
-                            <div className="absolute left-3 top-1/2 -translate-y-1/2 z-10">
+                            <div className="absolute left-1.5 top-1/2 -translate-y-1/2 z-10">
                                 <span className="text-slate-700 font-semibold">
                                     {formData.selectedCurrency.symbol}
                                 </span>
@@ -147,7 +147,7 @@ export const RequestForm = ({ formLogic, onClose, forwardedRef }: RequestFormPro
                                 onChange={handlers.handleBudgetChange}
                                 placeholder="Enter Amount"
                                 inputMode="decimal"
-                                className="w-full rounded-xl border-0 bg-white pl-10 pr-4 py-3.5 text-sm font-medium text-slate-800 ring-1 ring-slate-200 transition-all placeholder:text-slate-400 focus:ring-2 focus:ring-indigo-500 shadow-sm"
+                                className="w-full rounded-xl border-0 bg-white pl-10 pr-5 py-3.5 text-sm font-medium text-slate-800 ring-1 ring-slate-200 transition-all placeholder:text-slate-400 focus:ring-2 focus:ring-indigo-500 shadow-sm"
                             />
                         </div>
                     </div>
