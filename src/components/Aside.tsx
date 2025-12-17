@@ -50,7 +50,7 @@ const SOCIAL_LINKS = [
 // --- Sub-Components ---
 
 const UserProfile = memo(({ collapsed, onNavigate }: { collapsed: boolean; onNavigate: (s: Section) => void }) => (
-  <header className={`pt-6 md:pt-8 pb-8 relative ${collapsed ? 'px-0' : ''}`}>
+  <header className={`pt-8 pb-8 relative ${collapsed ? 'px-0' : ''}`}>
     <div className="absolute -top-4 -right-4 h-20 w-20 bg-gradient-to-r from-indigo-500/10 to-purple-500/10 rounded-full blur-2xl"></div>
     <div className={`relative ${collapsed ? 'flex justify-center' : ''}`}>
       <button
