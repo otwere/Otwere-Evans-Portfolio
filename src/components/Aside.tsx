@@ -47,6 +47,13 @@ const SOCIAL_LINKS = [
   },
 ];
 
+const TECH_BADGES = [
+  { icon: SiReact, label: "React.js", color: "text-cyan-500" },
+  { icon: SiTypescript, label: "TS", color: "text-blue-600" },
+  { icon: SiNextdotjs, label: "Next.js", color: "text-slate-900" },
+  { icon: SiTailwindcss, label: "Tailwind", color: "text-cyan-400" },
+];
+
 // --- Sub-Components ---
 
 const UserProfile = memo(({ collapsed, onNavigate }: { collapsed: boolean; onNavigate: (s: Section) => void }) => (
@@ -76,15 +83,18 @@ const UserProfile = memo(({ collapsed, onNavigate }: { collapsed: boolean; onNav
     <div className="border-b border-slate-200 mt-2"></div>
 
     {!collapsed && (
-      <div className="my-2 pb-2 grid grid-flow-col auto-cols-max gap-3 overflow-x-auto whitespace-nowrap scrollbar-thin scrollbar-thumb-slate-200 scrollbar-track-transparent">
-        <TechBadge icon={SiReact} label="React.js" color="text-cyan-500" />
-        <TechBadge icon={SiTypescript} label="TS" color="text-blue-600" />
-        <TechBadge icon={SiNextdotjs} label="Next.js" color="text-slate-900" />
-        <TechBadge icon={SiTailwindcss} label="Tailwind" color="text-cyan-400" />
+      <div className="my-2 pb-2 overflow-hidden w-full relative">
+        {/* Gradient Masks for smooth fade effect */}
+        <div className="absolute left-0 top-0 bottom-0 w-4 bg-gradient-to-r from-slate-50 to-transparent z-10"></div>
+        <div className="absolute right-0 top-0 bottom-0 w-4 bg-gradient-to-l from-slate-50 to-transparent z-10"></div>
+
+        <div className="animate-marquee gap-3">
+          {[...TECH_BADGES, ...TECH_BADGES, ...TECH_BADGES, ...TECH_BADGES].map((badge, i) => (
+            <TechBadge key={`badge-${i}`} icon={badge.icon} label={badge.label} color={badge.color} />
+          ))}
+        </div>
+        <div className="border-b border-slate-200 mt-2"></div>
       </div>
-
-
-
     )}
   </header>
 
