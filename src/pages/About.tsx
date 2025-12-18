@@ -46,20 +46,20 @@ export default function About() {
               <svg className="absolute h-0 w-0">
                 <defs>
                   <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" style={{ stopColor: '#8385f0ff', stopOpacity: 0.95 }} />
-                    <stop offset="100%" style={{ stopColor: '#b29aebff', stopOpacity: 0.95 }} />
+                    <stop offset="0%" style={{ stopColor: '#6366f1', stopOpacity: 0.95 }} />
+                    <stop offset="100%" style={{ stopColor: '#818cf8', stopOpacity: 0.95 }} />
                   </linearGradient>
                   <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" style={{ stopColor: '#8cb3f1ff', stopOpacity: 0.95 }} />
-                    <stop offset="100%" style={{ stopColor: '#7bbfdfff', stopOpacity: 0.95 }} />
+                    <stop offset="0%" style={{ stopColor: '#3b82f6', stopOpacity: 0.95 }} />
+                    <stop offset="100%" style={{ stopColor: '#60a5fa', stopOpacity: 0.95 }} />
                   </linearGradient>
                   <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" style={{ stopColor: '#f38093ff', stopOpacity: 0.95 }} />
-                    <stop offset="100%" style={{ stopColor: '#f592bfff', stopOpacity: 0.95 }} />
+                    <stop offset="0%" style={{ stopColor: '#f43f5e', stopOpacity: 0.95 }} />
+                    <stop offset="100%" style={{ stopColor: '#fb7185', stopOpacity: 0.95 }} />
                   </linearGradient>
                   <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" style={{ stopColor: '#f39451ff', stopOpacity: 0.95 }} />
-                    <stop offset="100%" style={{ stopColor: '#f8b692ff', stopOpacity: 0.95 }} />
+                    <stop offset="0%" style={{ stopColor: '#f97316', stopOpacity: 0.95 }} />
+                    <stop offset="100%" style={{ stopColor: '#fb923c', stopOpacity: 0.95 }} />
                   </linearGradient>
                 </defs>
               </svg>
