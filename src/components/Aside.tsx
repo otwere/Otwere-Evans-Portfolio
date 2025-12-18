@@ -10,7 +10,7 @@ import {
   FaLinkedin,
   FaFileDownload
 } from 'react-icons/fa';
-import { SiTypescript, SiReact, SiNextdotjs, SiTailwindcss } from 'react-icons/si';
+import { SiTypescript, SiReact, SiNextdotjs, SiTailwindcss, SiNodedotjs, SiExpress } from 'react-icons/si';
 import { RiCloseLine, RiArrowLeftSLine, RiArrowRightSLine } from 'react-icons/ri';
 
 // --- Configuration ---
@@ -52,6 +52,8 @@ const TECH_BADGES = [
   { icon: SiTypescript, label: "TS", color: "text-blue-600" },
   { icon: SiNextdotjs, label: "Next.js", color: "text-slate-900" },
   { icon: SiTailwindcss, label: "Tailwindcss", color: "text-cyan-400" },
+  { icon: SiNodedotjs, label: "Node.js", color: "text-green-500" },
+  { icon: SiExpress, label: "Express.js", color: "text-slate-500" },
 ];
 
 // --- Sub-Components ---
