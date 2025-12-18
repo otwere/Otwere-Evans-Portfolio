@@ -139,7 +139,7 @@ const NavItem = memo(({
         <div className={`transition-transform duration-300 ${isActive ? "scale-110 text-indigo-600" : "text-slate-400 group-hover:text-indigo-600"}`}>
           <Icon className="h-5 w-5" />
         </div>
-        {!collapsed && <span className="font-medium capitalize text-sm">{item.id}</span>}
+        {!collapsed && <span className="font-semibold  capitalize text-sm">{item.id}</span>}
         {isActive && (
           <div className={`absolute ${collapsed ? 'top-2 right-2' : 'right-4'} h-1.5 w-1.5 rounded-full bg-indigo-500 animate-pulse`}></div>
         )}
