@@ -28,7 +28,6 @@ export default function About() {
               </h1>
               <div className="h-px w-12 bg-gradient-to-r from-transparent via-purple-500 to-transparent"></div>
             </div>
-
           </div>
 
           {/* Main Content Card */}
@@ -38,27 +37,89 @@ export default function About() {
             <div className="absolute -bottom-6 -left-6 h-12 w-12 rounded-full bg-gradient-to-br from-cyan-400 to-blue-400"></div>
 
             <p className="relative text-lg leading-relaxed text-slate-700">
-              I'm <strong className="font-bold text-indigo-600">Otwere Evans</strong>,Front-End Software Developer dedicated to building high-performance user interfaces. I transform ideas into seamless digital experiences using React, TypeScript, and Next.js to deliver exceptional interactions. With a strong foundation in UI/UX and performance optimization, I develop scalable, consumer-centric applications using Agile methodologies. As I grow, I'm expanding into full-stack development to contribute innovative solutions across startups and enterprises.
+              I'm <strong className="font-bold text-indigo-600">Otwere Evans</strong>, Front-End Software Developer dedicated to building high-performance user interfaces. I transform ideas into seamless digital experiences using React, TypeScript, and Next.js to deliver exceptional interactions. With a strong foundation in UI/UX and performance optimization, I develop scalable, consumer-centric applications using Agile methodologies. As I grow, I'm expanding into full-stack development to contribute innovative solutions across startups and enterprises.
             </p>
 
-            {/* Personal Info Grid */}
-            <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
+            {/* Personal Info - Refined Blobs (Flex Layout) */}
+            <div className="mt-8 flex flex-wrap justify-center gap-x-4 gap-y-2 lg:gap-x-48">
+              {/* Defs for gradients - shared across all blobs */}
+              <svg className="absolute h-0 w-0">
+                <defs>
+                  <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style={{ stopColor: '#6366f1', stopOpacity: 0.95 }} />
+                    <stop offset="100%" style={{ stopColor: '#8b5cf6', stopOpacity: 0.95 }} />
+                  </linearGradient>
+                  <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style={{ stopColor: '#3b82f6', stopOpacity: 0.95 }} />
+                    <stop offset="100%" style={{ stopColor: '#0ea5e9', stopOpacity: 0.95 }} />
+                  </linearGradient>
+                  <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style={{ stopColor: '#f43f5e', stopOpacity: 0.95 }} />
+                    <stop offset="100%" style={{ stopColor: '#db2777', stopOpacity: 0.95 }} />
+                  </linearGradient>
+                  <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style={{ stopColor: '#f97316', stopOpacity: 0.95 }} />
+                    <stop offset="100%" style={{ stopColor: '#ea580c', stopOpacity: 0.95 }} />
+                  </linearGradient>
+                </defs>
+              </svg>
+
               {[
-                { icon: <RiUserLine className="text-sm" />, label: "Nationality", value: "Kenyan" },
-                { icon: <RiMapPinLine className="text-sm" />, label: "City", value: "Nairobi, Kenya" },
-                { icon: <RiMailLine className="text-sm" />, label: "Mail", value: "otweree@gmail.com" },
-                { icon: <RiBookLine className="text-sm" />, label: "Hobbies", value: "Reading Books & Tech Documentaries" },
+                {
+                  icon: <RiUserLine />,
+                  label: "Nationality",
+                  value: "Kenyan",
+                  gradient: "url(#grad1)",
+                  path: "M44.7,-76.4C58.1,-69.2,69.2,-58.1,76.4,-44.7C83.7,-31.3,87.1,-15.7,85.8,-0.8C84.4,14.1,78.3,28.2,70.1,40.1C61.9,52,51.6,61.7,39.7,69.5C27.8,77.3,13.9,83.1,-0.5,83.9C-14.9,84.7,-29.8,80.5,-42.6,73.1C-55.4,65.7,-66,55.1,-74.6,42.4C-83.2,29.7,-89.7,14.9,-90.1,-0.2C-90.5,-15.3,-84.9,-30.6,-75,-43C-65.1,-55.4,-51,-64.8,-36.8,-71.6C-22.6,-78.4,-8.3,-82.6,3,-87.8C14.3,-93,28.6,-99.3,44.7,-76.4Z",
+                },
+                {
+                  icon: <RiMapPinLine />,
+                  label: "City",
+                  value: "Nairobi, Kenya",
+                  gradient: "url(#grad2)",
+                  path: "M38.1,-63.4C49.1,-56.3,57.6,-45.3,64.2,-33.4C70.8,-21.5,75.4,-8.6,73.6,3.1C71.8,14.8,63.5,25.4,54.7,33.9C45.9,42.4,36.5,48.9,26,55.3C15.5,61.7,3.9,68.1,-8.5,69.5C-20.9,70.9,-34,67.3,-45.1,60C-56.2,52.7,-65.2,41.7,-71.2,29.3C-77.2,16.9,-80.2,3.1,-78.5,-9.7C-76.8,-22.5,-70.4,-34.3,-61.2,-44C-52,-53.7,-40,-61.3,-27.7,-67.6C-15.4,-73.9,-2.7,-78.9,10.6,-78.4C23.9,-77.9,32.4,-70.5,38.1,-63.4Z",
+                },
+                {
+                  icon: <RiMailLine />,
+                  label: "Mail",
+                  value: "otweree@gmail.com",
+                  gradient: "url(#grad3)",
+                  path: "M43.7,-75.4C55.4,-67.7,62.8,-53.4,69.1,-39.8C75.4,-26.2,80.6,-13.1,80.5,-0.1C80.4,12.9,74.9,25.8,66.8,36.8C58.7,47.8,48,56.9,36,65.2C24,73.5,10.7,81.1,-2.9,86.1C-16.5,91.1,-30.3,93.5,-42.6,87.8C-54.9,82.1,-65.7,68.3,-72.4,54.1C-79.1,39.9,-81.7,25.3,-82.1,10.7C-82.5,-3.9,-80.7,-18.5,-75.1,-31.9C-69.5,-45.3,-60.1,-57.5,-48.1,-65C-36.1,-72.5,-21.5,-75.3,-5.7,-72C10.1,-68.7,21.9,-79.1,43.7,-75.4Z",
+                },
+                {
+                  icon: <RiBookLine />,
+                  label: "Hobbies",
+                  value: "Reading & Tech Docs",
+                  gradient: "url(#grad4)",
+                  path: "M41.7,-73.1C53.7,-66.2,63.1,-53.5,69.4,-40.1C75.7,-26.7,78.9,-12.6,78.7,1.4C78.5,15.4,74.9,29.3,67.5,41.1C60.1,52.9,48.9,62.6,36.5,69.9C24.1,77.2,12.1,82,0.3,81.5C-11.5,81,-23,75.2,-34,68C-45,60.8,-55.5,52.2,-64.1,41.4C-72.7,30.6,-79.4,17.6,-82.4,3.4C-85.4,-10.8,-84.7,-26.2,-78.2,-39C-71.7,-51.8,-59.4,-62.1,-45.7,-68.2C-32,-74.3,-16,-76.3,-0.1,-76.1C15.8,-75.9,31.6,-73.5,41.7,-73.1Z",
+                },
               ].map((item) => (
                 <div
                   key={item.label}
-                  className="group/item flex items-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-2 shadow-none transition-all duration-300 hover:scale-95 hover:border-indigo-300 hover:shadow-none hover:shadow-indigo-100"
+                  className="group relative flex h-50 w-fit min-w-[240px] items-center justify-center px-8 transition-all duration-500 hover:scale-[1.05]"
                 >
-                  <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-indigo-500 to-purple-500 text-white shadow-none">
-                    {item.icon}
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 leading-tight">{item.label}:</span>
-                    <span className="text-sm font-semibold text-slate-700 leading-tight group-hover/item:text-indigo-600 transition-colors">{item.value}</span>
+                  <svg
+                    viewBox="0 0 200 200"
+                    preserveAspectRatio="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="absolute inset-x-0 inset-y-0 h-full w-full drop-shadow-none transition-all duration-1000 group-hover:rotate-3 select-none pointer-events-none"
+                  >
+                    <path
+                      fill={item.gradient}
+                      d={item.path}
+                      transform="translate(100 100)"
+                      className="transition-all duration-700 group-hover:saturate-150"
+                    />
+                  </svg>
+
+                  <div className="relative z-10 flex flex-col items-center gap-2 text-white text-center">
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-white/20 backdrop-blur-xl shadow-none border border-white/30 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 -mt-7 mb-2">
+                      <span className="text-sm drop-shadow-none">{item.icon}</span>
+                    </div>
+                    <div className="flex flex-col items-center gap-1">
+                      <span className="text-[11px] font-black uppercase tracking-[0.2em] text-white/90 drop-shadow-none leading-none">{item.label}</span>
+                      <span className="text-sm font-bold tracking-tight text-white drop-shadow-none">{item.value}</span>
+                    </div>
                   </div>
                 </div>
               ))}
@@ -227,7 +288,6 @@ export default function About() {
                       <div className="mt-4 flex items-center gap-4">
                         <div className="relative">
                           <img src={edu.orgImg} alt={edu.org} className="h-12 w-12 rounded-xl object-cover" />
-                          {/* <div className={`absolute -bottom-1 -right-1 h-4 w-4 rounded-full bg-gradient-to-br ${edu.accent}`}></div> */}
                         </div>
                         <div>
                           <h3 className="font-bold text-slate-800">{edu.org}</h3>
@@ -280,7 +340,7 @@ export default function About() {
                     date: "Oct 2023 – Dec 2023",
                     orgImg: "/img/microverse.png",
                     org: "Microverse Inc",
-                    role: "Student Code Reviewer",
+                    role: "Peer to Peer Code Reviewer",
                     location: "Remote",
                     bullets: [
                       "Conducted peer-to-peer code reviews for front-end applications, focusing on React and Redux best practices",
@@ -324,7 +384,7 @@ export default function About() {
                     {/* Timeline Node */}
                     <div className="absolute -left-[9px] top-0 h-5 w-5 rounded-full border-4 border-white bg-indigo-500 ring-2 ring-indigo-100"></div>
 
-                    <div className="group relative overflow-hidden rounded-xl border border-slate-200/50 bg-white p-6 transition-all duration-300 hover:scale-95 hover:border-indigo-200 hover:shadow-none">
+                    <div className="group relative overflow-hidden rounded-xl border border-slate-200/50 bg-white p-6 transition-all duration-300 hover:scale-[1.02] hover:border-indigo-200 hover:shadow-none">
                       {/* Floating elements */}
                       <div className="absolute -top-6 -right-6 h-12 w-12 rounded-full bg-gradient-to-br from-indigo-400 to-purple-400"></div>
                       <div className="absolute -bottom-6 -left-6 h-12 w-12 rounded-full bg-gradient-to-br from-cyan-400 to-blue-400"></div>
@@ -333,14 +393,13 @@ export default function About() {
                           <FaCalendar className="h-3 w-3 text-indigo-600" />
                           <span className="text-sm font-medium text-indigo-600">{exp.date}</span>
                         </div>
-                        <span className="inline-flex items-center rounded-xl bg-indigo-50 px-3 py-1 text-sm font-semibold text-indigo-600">
+                        <span className="inline-flex items-center rounded-xl bg-indigo-50 px-3 py-1 text-sm font-medium text-indigo-600">
                           {exp.location}
                         </span>
                       </div>
                       <div className="mt-4 flex items-center gap-4">
                         <div className="relative">
                           <img src={exp.orgImg} alt={exp.org} className="h-12 w-12 rounded-xl object-cover" />
-                          {/* <div className={`absolute -bottom-1 -right-1 h-4 w-4 rounded-full bg-gradient-to-br ${exp.accent}`}></div> */}
                         </div>
                         <div>
                           <h3 className="font-bold text-slate-800">{exp.org}</h3>
