@@ -56,8 +56,8 @@ export default function About() {
                   <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-indigo-500 to-purple-500 text-white shadow-none">
                     {item.icon}
                   </div>
-                  <div className="flex flex-col">
-                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 leading-tight">{item.label}</span>
+                  <div className="flex items-center gap-2">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 leading-tight">{item.label}:</span>
                     <span className="text-sm font-semibold text-slate-700 leading-tight group-hover/item:text-indigo-600 transition-colors">{item.value}</span>
                   </div>
                 </div>
@@ -94,7 +94,7 @@ export default function About() {
                     { name: "HTML5 & CSS3", icon: <SiHtml5 /> },
                     { name: "Ruby", icon: <SiRuby /> },
                     { name: "Typescript", icon: <SiTypescript /> },
-                    { name: "Python", icon: <SiPython /> },
+                    // { name: "Python", icon: <SiPython /> },
                     { name: "MongoDB, MySQL", icon: <div className="flex gap-1"><SiMongodb /><SiMysql /></div> },
                   ],
                   gradient: "from-indigo-500 to-blue-500"
@@ -119,7 +119,7 @@ export default function About() {
                     { name: "Data Structures & Algorithms", icon: <MdDataObject /> },
                     { name: "RESTful APIs", icon: <MdApi /> },
                     { name: "CI/CD", icon: <IoServerOutline /> },
-                    { name: "Object-Oriented Programming (OOP)", icon: <MdBuild /> },
+                    { name: "OOP", icon: <MdBuild /> },
                     { name: "UI/UX Design Principles", icon: <MdSettings /> },
                     { name: "Agile Methodologies", icon: <MdLeaderboard /> },
                   ],
@@ -129,12 +129,11 @@ export default function About() {
                   title: "Soft Skills",
                   icon: <FaBriefcase className="text-2xl" />,
                   skills: [
-                    { name: "Problem Solving", icon: <MdSettings /> },
-                    { name: "Collaboration", icon: <MdLeaderboard /> },
-                    { name: "Effective Communication", icon: <MdChat /> },
+                    { name: "Problem Solving & Collaboration", icon: <div className="flex gap-1"><MdSettings /><MdLeaderboard /></div> },
+                    { name: "Communication", icon: <MdChat /> },
                     { name: "Adaptability & Learning", icon: <MdUpdate /> },
                     { name: "Time Management", icon: <MdTimer /> },
-                    { name: "Mentorship & Leadership", icon: <MdRecordVoiceOver /> },
+                    // { name: "Mentorship & Leadership", icon: <MdRecordVoiceOver /> },
                   ],
                   gradient: "from-emerald-500 to-teal-500"
                 }
@@ -187,7 +186,7 @@ export default function About() {
                     org: "Microverse Inc",
                     role: "Front End Software Development",
                     bullets: [
-                      "1300+ hours mastering algorithms, data structures, and front-end development",
+                      "Learning algorithms, data structures, and front-end development",
                       "Responsive UI design, component-based architecture, and performance optimization",
                       "Remote pair-programming using GitHub and industry-standard git-flow",
                       "Daily standup's with international developers and collaboration",

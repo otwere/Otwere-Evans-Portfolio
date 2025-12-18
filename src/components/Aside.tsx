@@ -71,7 +71,7 @@ const UserProfile = memo(({ collapsed, onNavigate }: { collapsed: boolean; onNav
         </div>
         {!collapsed && (
           <div className="flex flex-col leading-tight">
-            <h1 className="text-lg font-semibold tracking-tight text-slate-900">
+            <h1 className="text-2xl font-bold tracking-tight text-slate-900">
               Otwere Evans
             </h1>
 
