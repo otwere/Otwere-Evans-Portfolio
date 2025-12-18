@@ -70,11 +70,14 @@ const UserProfile = memo(({ collapsed, onNavigate }: { collapsed: boolean; onNav
           </div>
         </div>
         {!collapsed && (
-          <div>
-            <h1 className="text-2xl font-bold text-slate-800">
+          <div className="flex flex-col leading-tight">
+            <h1 className="text-lg font-semibold tracking-tight text-slate-900">
               Otwere Evans
             </h1>
-            <p className="text-sm font-medium text-slate-500 -mt-1">Frontend Software Developer</p>
+
+            <p className="-mt-1 text-xs sm:text-sm font-medium text-slate-500 whitespace-nowrap">
+              Frontend Software Developer
+            </p>
           </div>
 
         )}
