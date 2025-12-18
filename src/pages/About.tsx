@@ -1,8 +1,8 @@
 import { FaCode, FaCogs, FaGlobe, FaDownload, FaCalendar, FaGraduationCap, FaBriefcase } from 'react-icons/fa';
-import { SiJavascript, SiHtml5, SiRuby, SiTypescript, SiPython, SiMongodb, SiMysql, SiNodedotjs, SiGraphql, SiReact, SiNextdotjs, SiTailwindcss, SiLinux, SiGithub, SiExpress } from 'react-icons/si';
+import { SiJavascript, SiHtml5, SiRuby, SiTypescript, SiMongodb, SiMysql, SiNodedotjs, SiGraphql, SiReact, SiNextdotjs, SiTailwindcss, SiLinux, SiGithub, SiExpress } from 'react-icons/si';
 import { RiMailLine, RiMapPinLine, RiUserLine, RiBookLine } from 'react-icons/ri';
 import { IoServerOutline } from 'react-icons/io5';
-import { MdDataObject, MdApi, MdSettings, MdBuild, MdLeaderboard, MdChat, MdUpdate, MdTimer, MdRecordVoiceOver } from 'react-icons/md';
+import { MdDataObject, MdApi, MdSettings, MdBuild, MdLeaderboard, MdChat, MdUpdate, MdTimer } from 'react-icons/md';
 import { SEO } from "../components/SEO";
 
 export default function About() {
