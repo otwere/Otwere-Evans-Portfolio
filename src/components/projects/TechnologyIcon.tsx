@@ -23,7 +23,7 @@ export const TechnologyIcon = ({ tech }: { tech: string }) => {
         "D3.js": <FaCode className="h-4 w-4 text-orange-500" />,
         Mapbox: <FaCode className="h-4 w-4 text-blue-400" />,
         PostgreSQL: <FaServer className="h-4 w-4 text-blue-700" />,
-        NestJS: <FaServer className="h-4 w-4 text-red-500" />,
+        NestJS: <SiNextdotjs className="h-4 w-4 text-red-500" />,
     };
 
     return icons[tech] || <FaCode className="h-4 w-4 text-slate-600" />;

@@ -162,7 +162,7 @@ export const RequestForm = ({ formLogic, onClose, forwardedRef }: RequestFormPro
                     <button
                         type="button"
                         onClick={onClose}
-                        className="px-5 py-3.5 text-sm font-medium text-slate-600 hover:text-slate-800 bg-slate-100 hover:bg-slate-200 rounded-xl transition-colors min-w-[100px]"
+                        className="px-5 py-3.5 text-sm font-medium text-slate-600 bg-slate-100 hover:bg-rose-100 hover:text-rose-400 rounded-xl transition-colors min-w-[100px]"
                     >
                         Cancel
                     </button>
