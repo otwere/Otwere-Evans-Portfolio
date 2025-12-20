@@ -18,7 +18,7 @@ export default function About() {
         <div className="absolute -top-20 -right-20 h-64 w-64 rounded-full bg-gradient-to-r from-indigo-300/20 to-purple-300/20 blur-3xl"></div>
         <div className="absolute -bottom-20 -left-20 h-64 w-64 rounded-full bg-gradient-to-r from-cyan-300/20 to-blue-300/20 blur-3xl"></div>
 
-        <div className="relative mx-auto w-full max-w-408">
+        <div className="relative mx-auto w-full max-w-fit">
           {/* Header with animation */}
           <div className="mb-12 text-center">
             <div className="inline-flex items-center gap-2">
@@ -37,7 +37,11 @@ export default function About() {
             <div className="absolute -bottom-6 -left-6 h-12 w-12 rounded-full bg-gradient-to-br from-cyan-400 to-blue-400"></div>
 
             <p className="relative text-lg leading-relaxed text-slate-700">
-              I'm <strong className="font-bold text-indigo-600">Otwere Evans</strong>, Front-End Software Developer dedicated to building high-performance user interfaces. I transform ideas into seamless digital experiences using React, TypeScript, and Next.js to deliver exceptional interactions. With a strong foundation in UI/UX and performance optimization, I develop scalable, consumer-centric applications using Agile methodologies. As I grow, I'm expanding into full-stack development to contribute innovative solutions across startups and enterprises.
+              I'm <strong className="font-bold text-indigo-600">Otwere Evans</strong>, Front-End Software Developer experienced in building high-performance user interfaces.
+               I transform ideas into seamless digital experiences using React.js, TypeScript, 
+               Tailwindcss and Next.js to deliver exceptional interactions. 
+               With a strong foundation in UI/UX and performance optimization, I develop scalable, consumer-centric applications using Agile methodologies.
+                As I grow, I'm expanding into full-stack development to contribute innovative solutions across startups and enterprises.
             </p>
 
             {/* Personal Info - Refined Blobs (Flex Layout) */}

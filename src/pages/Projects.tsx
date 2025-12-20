@@ -35,7 +35,7 @@ export default function Projects() {
         <div className="absolute -top-40 -right-40 h-80 w-80 rounded-full bg-linear-to-r from-indigo-200/10 to-purple-200/10 blur-3xl"></div>
         <div className="absolute -bottom-40 -left-40 h-80 w-80 rounded-full bg-gradient-to-r from-cyan-200/10 to-blue-200/10 blur-3xl"></div>
 
-        <div className="relative mx-auto w-full max-w-408">
+        <div className="relative mx-auto w-full max-w-fit">
           {/* Header */}
           <div className="mb-12 text-center">
             <div className="inline-flex items-center gap-2">

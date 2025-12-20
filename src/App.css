@@ -34,8 +34,8 @@
    /* Desktop (Sidebar Offset) */
    @media (min-width: 1280px) {
      #root {
-       padding-left: 0rem; /* Sidebar width */
-       padding-right: 0rem;
+       padding-left: 0.125rem; /* Sidebar width */
+       padding-right: 0.125rem;
      }
    }
    
