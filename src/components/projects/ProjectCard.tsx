@@ -1,4 +1,4 @@
-import { FaGithub, FaExternalLinkAlt, FaCode, FaProjectDiagram } from "react-icons/fa";
+import { FaExternalLinkAlt, FaCode, FaProjectDiagram } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
 import type { Project } from "../../types/project";
 import { TechnologyIcon } from "./TechnologyIcon";
@@ -112,11 +112,11 @@ export const ProjectCard = memo(({ project, index, onOpenModal }: ProjectCardPro
                         </button>
                     )}
 
-                    <div className="flex items-center gap-2 text-sm text-slate-500">
+                    {/* <div className="flex items-center gap-2 text-sm text-slate-500">
                         {project.external ? (
                             <>
                                 <FaExternalLinkAlt className="h-3 w-3" />
-                                <span className="whitespace-nowrap">Live Demo</span>
+                                <span className="whitespace-nowrap"></span>
                             </>
                         ) : (
                             <a
@@ -125,11 +125,11 @@ export const ProjectCard = memo(({ project, index, onOpenModal }: ProjectCardPro
                                 rel="noopener noreferrer"
                                 className="flex items-center gap-2 hover:text-indigo-600 transition-colors"
                             >
-                                <FaGithub className="h-4 w-4" />
-                                <span className="whitespace-nowrap">Source Code</span>
+                                <FaExternalLinkAlt className="h-4 w-4" />
+                                <span className="whitespace-nowrap">Live Project link</span>
                             </a>
                         )}
-                    </div>
+                    </div> */}
                 </div>
             </div>
 

@@ -1,15 +1,7 @@
 import { useEffect, useRef, memo } from "react";
 import type { Section } from "../hooks/useSection";
 import { useSidebar } from "../context/SidebarContext";
-import {
-  FaHome,
-  FaUser,
-  FaProjectDiagram,
-  FaEnvelope,
-  FaGithub,
-  FaLinkedin,
-  FaFileDownload
-} from 'react-icons/fa';
+import { FaHome, FaUser, FaProjectDiagram, FaEnvelope, FaGithub, FaLinkedin, FaFileDownload } from 'react-icons/fa';
 import { SiTypescript, SiReact, SiNextdotjs, SiTailwindcss, SiNodedotjs, SiExpress } from 'react-icons/si';
 import { RiCloseLine, RiArrowLeftSLine, RiArrowRightSLine } from 'react-icons/ri';
 
