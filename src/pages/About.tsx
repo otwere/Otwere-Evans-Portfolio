@@ -38,10 +38,10 @@ export default function About() {
 
             <p className="relative text-lg leading-relaxed text-slate-700">
               I'm <strong className="font-bold text-indigo-600">Otwere Evans</strong>, Front-End Software Developer experienced in building high-performance user interfaces.
-               I transform ideas into seamless digital experiences using React.js, TypeScript, 
-               Tailwindcss and Next.js to deliver exceptional interactions. 
-               With a strong foundation in UI/UX and performance optimization, I develop scalable, consumer-centric applications using Agile methodologies.
-                As I grow, I'm expanding into full-stack development to contribute innovative solutions across startups and enterprises.
+              I transform ideas into seamless digital experiences using React.js, TypeScript,
+              Tailwindcss and Next.js to deliver exceptional interactions.
+              With a strong foundation in UI/UX and performance optimization, I develop scalable, consumer-centric applications using Agile methodologies.
+              As I grow, I'm expanding into full-stack development to contribute innovative solutions across startups and enterprises.
             </p>
 
             {/* Personal Info - Refined Blobs (Flex Layout) */}
@@ -347,10 +347,10 @@ export default function About() {
                     role: "Peer to Peer Code Reviewer",
                     location: "Remote",
                     bullets: [
-                      "Conducted peer-to-peer code reviews for front-end applications, focusing on React and Redux best practices",
+                      "Peer-to-peer code reviews for front-end applications, focusing on React and Redux best practices",
                       "Collaborated daily with international developers to debug and optimize collaborative projects",
                       "Collaborated with developers on Git workflow and collaborative coding standards",
-                      "Facilitated technical discussions to solve complex front-end coding challenges",
+                      "Peer to peer technical discussions to solve complex front-end coding challenges",
                     ],
                     accent: "from-blue-500 to-cyan-500"
                   },

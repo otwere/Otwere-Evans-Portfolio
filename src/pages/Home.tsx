@@ -5,7 +5,8 @@ export default function Home() {
     <>
       <SEO
         title="Home"
-        description="Welcome to Otwere Evans' portfolio. Experienced Software Developer specializing in modern Front-end Development, React, and creating high-performance web experiences."
+        description="Welcome to Otwere Evans' portfolio. Experienced Software Developer specializing in 
+        modern Front-end Development,using React.js,TypeScript,Tailwindcss, and creating high-performance web App experiences."
       />
       <section id="home" className="animate-enter page bg-slate-50 px-6 py-16">
         <div className="mx-auto grid w-full max-w-full place-items-center text-center">

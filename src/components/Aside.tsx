@@ -41,7 +41,7 @@ const SOCIAL_LINKS = [
 
 const TECH_BADGES = [
   { icon: SiReact, label: "React.js", color: "text-cyan-500" },
-  { icon: SiTypescript, label: "TS", color: "text-blue-600" },
+  { icon: SiTypescript, label: "TypeScript", color: "text-blue-600" },
   { icon: SiNextdotjs, label: "Next.js", color: "text-slate-900" },
   { icon: SiTailwindcss, label: "Tailwindcss", color: "text-cyan-400" },
   { icon: SiNodedotjs, label: "Node.js", color: "text-green-500" },

@@ -1,11 +1,5 @@
 import { FaCode, FaServer } from "react-icons/fa";
-import {
-    SiTypescript,
-    SiReact,
-    SiNextdotjs,
-    SiTailwindcss,
-    SiVite,
-} from "react-icons/si";
+import { SiTypescript, SiReact, SiNextdotjs, SiTailwindcss, SiVite, } from "react-icons/si";
 import type { JSX } from "react";
 
 export const TechnologyIcon = ({ tech }: { tech: string }) => {
