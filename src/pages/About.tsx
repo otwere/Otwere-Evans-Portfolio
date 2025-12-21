@@ -18,7 +18,7 @@ export default function About() {
         <div className="absolute -top-20 -right-20 h-64 w-64 rounded-full bg-gradient-to-r from-indigo-300/20 to-purple-300/20 blur-3xl"></div>
         <div className="absolute -bottom-20 -left-20 h-64 w-64 rounded-full bg-gradient-to-r from-cyan-300/20 to-blue-300/20 blur-3xl"></div>
 
-        <div className="relative mx-auto w-full max-w-fit">
+        <div className="relative mx-auto w-full max-w-full">
           {/* Header with animation */}
           <div className="mb-12 text-center">
             <div className="inline-flex items-center gap-2">

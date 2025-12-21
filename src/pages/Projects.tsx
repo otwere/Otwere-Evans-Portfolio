@@ -35,15 +35,15 @@ export default function Projects() {
         <div className="absolute -top-40 -right-40 h-80 w-80 rounded-full bg-linear-to-r from-indigo-200/10 to-purple-200/10 blur-3xl"></div>
         <div className="absolute -bottom-40 -left-40 h-80 w-80 rounded-full bg-gradient-to-r from-cyan-200/10 to-blue-200/10 blur-3xl"></div>
 
-        <div className="relative mx-auto w-full max-w-fit">
+        <div className="relative mx-auto w-full max-w-full">
           {/* Header */}
           <div className="mb-12 text-center">
             <div className="inline-flex items-center gap-2">
-              <div className="h-1 w-8 sm:w-16 rounded-full bg-gradient-to-r from-transparent via-indigo-500 to-transparent"></div>
+              <div className="h-0.5 w-16 rounded-full bg-gradient-to-r from-transparent via-indigo-500 to-transparent"></div>
               <h1 className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-3xl sm:text-3xl font-bold text-transparent">
                 Featured Projects
               </h1>
-              <div className="h-1 w-8 sm:w-16 rounded-full bg-gradient-to-r from-transparent via-purple-500 to-transparent"></div>
+              <div className="h-0.5 w-16 rounded-full bg-gradient-to-r from-transparent via-purple-500 to-transparent"></div>
             </div>
           </div>
 
