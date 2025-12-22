@@ -1,4 +1,4 @@
-import { FaExternalLinkAlt, FaCode, FaProjectDiagram } from "react-icons/fa";
+import { FaCode, FaProjectDiagram, FaExternalLinkAlt } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
 import type { Project } from "../../types/project";
 import { TechnologyIcon } from "./TechnologyIcon";
@@ -112,7 +112,7 @@ export const ProjectCard = memo(({ project, index, onOpenModal }: ProjectCardPro
                         </button>
                     )}
 
-                    {/* <div className="flex items-center gap-2 text-sm text-slate-500">
+                    <div className="flex items-center gap-2 text-sm text-slate-500">
                         {project.external ? (
                             <>
                                 <FaExternalLinkAlt className="h-3 w-3" />
@@ -129,7 +129,7 @@ export const ProjectCard = memo(({ project, index, onOpenModal }: ProjectCardPro
                                 <span className="whitespace-nowrap">Live Project link</span>
                             </a>
                         )}
-                    </div> */}
+                    </div>
                 </div>
             </div>
 
