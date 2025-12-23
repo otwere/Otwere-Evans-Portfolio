@@ -56,7 +56,7 @@ const UserProfile = memo(({ collapsed, onNavigate }: { collapsed: boolean; onNav
     <div className={`relative ${collapsed ? 'flex justify-center' : ''}`}>
       <button
         onClick={() => onNavigate("home")}
-        className={`inline-flex items-center gap-3 group text-left cursor-pointer ${collapsed ? 'flex-col' : ''}`}
+        className={`inline-flex items-center gap-3 group text-left ${collapsed ? 'flex-col' : ''}`}
       >
         <div className="relative">
           <div className={`${collapsed ? 'h-12 w-10 mt-2' : 'h-12 w-12'} rounded-2xl bg-gradient-to-r from-indigo-600 to-purple-600 flex items-center justify-center transition-all duration-300 group-hover:scale-95 shadow-indigo-500/20`}>
@@ -120,7 +120,7 @@ const NavItem = memo(({
   return (
     <li>
       <button
-        className={`group relative flex items-center cursor-pointer ${collapsed ? 'justify-center px-3' : 'gap-4 px-4'} w-full py-3 text-left transition-all duration-300 rounded-lg ${isActive
+        className={`group relative flex items-center  ${collapsed ? 'justify-center px-3' : 'gap-4 px-4'} w-full py-3 text-left transition-all duration-300 rounded-lg ${isActive
           ? "bg-indigo-50 text-indigo-700"
           : "text-slate-600 hover:bg-slate-100 hover:text-slate-900"
           }`}
@@ -241,7 +241,7 @@ export default function Sidebar({ current, onNavigate }: Props) {
                     href={link.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`group ${isCollapsed ? 'p-3' : 'p-3.5'} rounded-xl bg-white border border-slate-200 text-center cursor-pointer hover:bg-slate-50 transition-all duration-300 hover:scale-95`}
+                    className={`group ${isCollapsed ? 'p-3' : 'p-3.5'} rounded-xl bg-white border border-slate-200 text-center  hover:bg-slate-50 transition-all duration-300 hover:scale-95`}
                     aria-label={link.label}
                     title={link.label}
                   >
