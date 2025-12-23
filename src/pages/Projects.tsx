@@ -28,7 +28,7 @@ export default function Projects() {
       />
       <section
         id="projects"
-        className="animate-enter relative overflow-hidden bg-linear-to-b from-slate-50 to-slate-100 px-0 sm:px-6 py-16 sm:py-24"
+        className="animate-enter relative overflow-hidden bg-slate-50 px-0 sm:px-6 py-16 sm:py-24"
       >
         {/* Decorative elements */}
         <div className="absolute top-0 left-0 right-0 h-1 bg-linear-to-r from-transparent via-indigo-500 to-transparent"></div>

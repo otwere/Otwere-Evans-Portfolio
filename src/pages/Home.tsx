@@ -8,7 +8,7 @@ export default function Home() {
         description="Welcome to Otwere Evans' portfolio. Experienced Software Developer specializing in 
         modern Front-end Development,using React.js,TypeScript,Tailwindcss, and creating high-performance web App experiences."
       />
-      <section id="home" className="animate-enter page bg-slate-50 px-6 py-16">
+      <section id="home" className="animate-enter min-h-full flex items-center justify-center md:justify-start py-16 md:pt-72 bg-slate-50 px-6">
         <div className="mx-auto grid w-full max-w-full place-items-center text-center">
           <div className="mx-auto mb-6 h-48 w-48 overflow-hidden rounded-full border-8 border-white shadow-sm shadow-indigo-500/10">
             <img

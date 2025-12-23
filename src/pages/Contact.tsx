@@ -10,7 +10,7 @@ export default function Contact() {
       />
       <section
         id="contact"
-        className="animate-enter flex flex-col items-center justify-center min-h-[calc(100vh-2rem)] py-12 px-4 bg-slate-50/50"
+        className="animate-enter flex flex-col items-center justify-center md:justify-start min-h-full py-12 md:pt-52 px-4 bg-slate-50"
       >
         <div className="w-full max-w-4xl mx-auto">
           {/* Header */}

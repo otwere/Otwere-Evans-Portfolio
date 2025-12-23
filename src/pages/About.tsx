@@ -13,7 +13,7 @@ export default function About() {
         description="Learn more about Otwere Evans, Front-End Software Developer from Nairobi, Kenya. Explore my skills, education, and professional journey."
         keywords="About Otwere Evans, Software Developer Bio, Skills, Education, Experience"
       />
-      <section id="about" className="animate-enter relative overflow-hidden bg-linear-to-br from-slate-50 via-white to-indigo-50/30 px-2 py-20">
+      <section id="about" className="animate-enter relative overflow-hidden bg-slate-50 px-2 py-20">
         {/* Decorative elements */}
         <div className="absolute -top-20 -right-20 h-64 w-64 rounded-full bg-gradient-to-r from-indigo-300/20 to-purple-300/20 blur-3xl"></div>
         <div className="absolute -bottom-20 -left-20 h-64 w-64 rounded-full bg-gradient-to-r from-cyan-300/20 to-blue-300/20 blur-3xl"></div>

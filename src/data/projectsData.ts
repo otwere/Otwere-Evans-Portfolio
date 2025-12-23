@@ -38,7 +38,7 @@ export const projects: Project[] = [
     {
         title: "HopeWorks NGO Website",
         description:
-            "Modern, high-performance web platform designed to amplify the impact of Non-Governmental Organizations.\n\nHighlights:\n• Fast, responsive, and user-friendly experience\n• Secure donation options (Mobile Payments, Credit Cards, Google Pay)\n• Easy-to-manage platform to share missions and drive community involvement",
+            "Modern, high-performance web platform designed to amplify the impact of Non-Governmental Organizations.\n\nHighlights:\n• Fast, responsive, and user-friendly experience\n• Secure donation options (Mobile Payments, Credit Cards)\n• Easy-to-manage platform to share missions and drive community involvement",
         image: "/img/ngo_website.png",
         link: "https://github.com/otwere/NGO_Website",
         technologies: ["Next.js", "React", "Stripe", "Tailwind"],
