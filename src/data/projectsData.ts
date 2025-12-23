@@ -13,7 +13,7 @@ export const projects: Project[] = [
         description:
             "Developed a user-friendly hospital website for MedicarePlus featuring a seamless booking management system.\n\nKey Features:\n• Streamlines appointment scheduling\n• Enhances overall patient experience\n• Supports multiple secure payment methods (Insurance, M-pesa, credit card)\n• Improves accessibility and supports efficient hospital operations",
         image: "/img/medicare.png",
-        link: "https://github.com/otwere/MedicarePlus_Hospital_Website",
+        link: "https://medicarepluske.netlify.app",
         technologies: ["React", "TypeScript", "Tailwind CSS", "Node.js"],
         category: "Healthcare",
     },
@@ -22,7 +22,7 @@ export const projects: Project[] = [
         description:
             "Empower your business with a powerful, integrated system designed to streamline operations and optimize workforce management.\n\nKey Benefits:\n• Combines Point-of-Sale (POS) and HR tools\n• Eliminates inefficiencies\n• Enhances customer experiences\n• Drives business growth through a single, intuitive platform",
         image: "/img/EPR_HRM.png",
-        link: "https://github.com/otwere/epr-pos-v2.0.1",
+        link: "",
         technologies: ["React", "TypeScript", "MongoDB", "Express"],
         category: "Enterprise",
     },
@@ -31,7 +31,7 @@ export const projects: Project[] = [
         description:
             "Integrated platform for students to apply for Bursary and Scholarship opportunities.\n\nCore Functions:\n• Streamlines Application, Vetting, Approval, and Disbursement\n• Connects institutions and funding bodies\n• Ensures transparency and real-time tracking",
         image: "/img/ebursary.png",
-        link: "https://github.com/otwere/eBursary_Management_System",
+        link: "",
         technologies: ["Vite", "React", "TypeScript", "Tailwind"],
         category: "Education",
     },
@@ -40,7 +40,7 @@ export const projects: Project[] = [
         description:
             "Modern, high-performance web platform designed to amplify the impact of Non-Governmental Organizations.\n\nHighlights:\n• Fast, responsive, and user-friendly experience\n• Secure donation options (Mobile Payments, Credit Cards)\n• Easy-to-manage platform to share missions and drive community involvement",
         image: "/img/ngo_website.png",
-        link: "https://github.com/otwere/NGO_Website",
+        link: "",
         technologies: ["Next.js", "React", "Stripe", "Tailwind"],
         category: "Non-Profit",
     },
@@ -49,7 +49,7 @@ export const projects: Project[] = [
         description:
             "Modern, efficient School Information System designed to enhance school operations.\n\nModules:\n• Online Admissions Application\n• Reports and communication\n• Academic management and administrative workflows\n• Seamless reporting for teachers, staff, students, and parents",
         image: "/img/School Web-App.png",
-        link: "https://github.com/otwere/School_Website",
+        link: "",
         technologies: ["Vite", "React", "TypeScript", "Tailwind"],
         category: "Education",
     },
@@ -68,7 +68,7 @@ export const projects: Project[] = [
         description:
             "Pioneering data-driven solution for sustainable water resource management across Africa.\n\nCapabilities:\n• Actionable insights on water and climate change\n• Smart analytics and real-time data integration\n• Intuitive interface for informed decision-making\n• Supports climate resilience and sustainable development",
         image: "/img/africa-water.png",
-        link: "https://github.com/otwere/Africa-Water-Climate",
+        link: "",
         technologies: ["Next.js", "D3.js", "Mapbox", "TypeScript"],
         category: "Sustainability",
     },
@@ -77,7 +77,7 @@ export const projects: Project[] = [
         description:
             "Comprehensive digital solution to streamline and automate farewell operations.\n\nKey Features:\n• Manages deceased records, storage, and autopsy details\n• Handles transportation, billing, and reporting\n• Secure data handling and seamless workflow integration\n• Ideal for Non-Hospital Private Farewell Service",
         image: "/img/fmis.png",
-        link: "https://github.com/otwere/Farewell-Information-Management-System",
+        link: "",
         technologies: ["React", "Node.js", "MongoDB", "Express"],
         category: "Enterprise",
     },
@@ -86,7 +86,7 @@ export const projects: Project[] = [
         description:
             "End-to-end real estate platform simplifying property rental operations for Admins, Agents, and Tenants.\n\nIncludes:\n• Role-based access control\n• Real-time listings and tenant applications\n• Lease management, rent tracking, and maintenance requests\n• Detailed reporting tools and secure architecture",
         image: "/img/rental.png",
-        link: "https://github.com/otwere/rental-management-system",
+        link: "",
         technologies: ["React", "TypeScript", "PostgreSQL", "NestJS"],
         category: "Real Estate",
     },
