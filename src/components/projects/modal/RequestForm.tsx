@@ -83,9 +83,9 @@ export const RequestForm = ({ formLogic, onClose, forwardedRef }: RequestFormPro
                         <label className="block text-xs font-semibold text-slate-700 uppercase tracking-wider">
                             Your Budget
                         </label>
-                        <span className="text-sm text-slate-500">
+                        {/* <span className="text-sm text-slate-500">
                             All amounts are negotiable
-                        </span>
+                        </span> */}
                     </div>
                     <div className="flex gap-2">
                         {/* Currency Dropdown */}

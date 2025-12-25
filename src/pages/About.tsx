@@ -240,7 +240,7 @@ export default function About() {
                 <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-emerald-500 to-teal-500 text-white">
                   <FaGraduationCap className="h-6 w-6" />
                 </div>
-                <h2 className="text-2xl font-bold text-slate-800">Education</h2>
+                <h2 className="text-2xl font-bold text-slate-800">Skill-ups</h2>
               </div>
 
               <div className="relative ml-3 border-l-2 border-indigo-200 space-y-8 pb-8">
