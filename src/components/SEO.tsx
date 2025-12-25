@@ -14,7 +14,7 @@ export const SEO = ({
     description,
     keywords,
     image = "/img/Otwere-Pic.jpg",
-    url = "https://otwere.github.io/portfolio-otwere/",
+    url = "https://otwere.netlify.app",
     type = "website"
 }: SEOProps) => {
     const siteTitle = "Otwere Evans | Portfolio";
