@@ -40,7 +40,7 @@ export function SidebarProvider({ children }: { children: ReactNode }) {
                 setIsOpen(false);
             } else {
                 // Mobile: Ensure sidebar is expanded (not collapsed mode) visually if shown
-                // We typically don't persist collapse state on mobile, effectively ignored by CSS logic usually
+                // I typically don't persist collapse state on mobile, effectively ignored by CSS logic usually
             }
         };
 
