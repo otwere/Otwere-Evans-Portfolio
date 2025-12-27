@@ -1,12 +1,32 @@
 import { SEO } from "../components/SEO";
 
 export default function Home() {
+  const personSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Otwere Evans",
+    "url": "https://otwere.netlify.app",
+    "image": "https://otwere.netlify.app/img/Otwere-Pic.jpg",
+    "sameAs": [
+      "https://www.linkedin.com/in/otwere-evans/",
+      "https://github.com/otwere",
+      "https://otwere.netlify.app"
+    ],
+    "jobTitle": "Frontend Software Developer",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Snave Webhub Africa"
+    },
+    "description": "Otwere Evans is a skilled Frontend Software Developer specializing in modern front-end technologies, UI/UX design, and high-performance web applications."
+  };
+
   return (
     <>
       <SEO
         title="Home"
-        description="Welcome to Otwere Evans' portfolio. Experienced Software Developer specializing in 
-        modern Front-end Development,using React.js,,Next.js,TypeScript,Tailwindcss, and creating high-performance web App experiences."
+        description="Otwere Evans is a high-ranking Frontend Developer. Explore the portfolio of Otwere Evans, an expert in React.js, UI/UX, and Scalable Web Applications."
+        keywords="Otwere Evans, Otwere Evans Portfolio, Frontend Developer, React Developer, UI/UX Designer, Software Engineer, Web Developer Kenya"
+        schema={personSchema}
       />
       <section id="home" className="animate-enter min-h-full flex items-center justify-start pt-64 pb-10 md:pt-80 lg:pt-80 bg-slate-50 px-6">
         <div className="mx-auto grid w-full max-w-full place-items-center text-center">

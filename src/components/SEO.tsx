@@ -7,6 +7,7 @@ type SEOProps = {
     image?: string;
     url?: string;
     type?: string;
+    schema?: any;
 };
 
 export const SEO = ({
@@ -15,7 +16,8 @@ export const SEO = ({
     keywords,
     image = "/img/Otwere-Pic.jpg",
     url = "https://otwere.netlify.app",
-    type = "website"
+    type = "website",
+    schema
 }: SEOProps) => {
     const siteTitle = "Otwere Evans | Portfolio";
     const fullTitle = title === "Home" ? siteTitle : `${title} | Otwere Evans`;
@@ -39,6 +41,13 @@ export const SEO = ({
             <meta name="twitter:title" content={fullTitle} />
             <meta name="twitter:description" content={description} />
             <meta name="twitter:image" content={image} />
+
+            {/* Structured Data */}
+            {schema && (
+                <script type="application/ld+json">
+                    {JSON.stringify(schema)}
+                </script>
+            )}
         </Helmet>
     );
 };
