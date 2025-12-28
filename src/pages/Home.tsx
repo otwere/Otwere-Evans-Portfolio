@@ -17,7 +17,7 @@ export default function Home() {
       "@type": "Organization",
       "name": "Snave Webhub Africa"
     },
-    "description": "Otwere Evans is a skilled Frontend Software Developer specializing in modern front-end technologies, UI/UX design, and high-performance web applications."
+    "description": "Otwere Evans is a skilled Frontend Software Developer specializing in modern front-end technologies and high-performance web applications."
   };
 
   return (
