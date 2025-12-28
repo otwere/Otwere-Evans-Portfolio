@@ -36,12 +36,12 @@ export default function About() {
             <div className="absolute -top-6 -right-6 h-12 w-12 rounded-full bg-gradient-to-br from-indigo-400 to-purple-400"></div>
             <div className="absolute -bottom-6 -left-6 h-12 w-12 rounded-full bg-gradient-to-br from-cyan-400 to-blue-400"></div>
 
-            <p className="relative text-lg leading-relaxed text-slate-700">
+            <p className="relative text-lg leading-relaxed text-slate-800">
               I'm <strong className="font-bold text-indigo-600">Otwere Evans</strong>, Front-End Software Developer experienced in building high-performance user interfaces.
               I transform ideas into seamless digital experiences using React.js,TypeScript,
               Tailwindcss and Next.js to deliver exceptional interactions.
-               I develop scalable, Performance optimization, consumer-centric applications using Agile methodologies.
-               I contribute innovative solutions across startups and enterprises.
+              I develop scalable, Performance optimization, consumer-centric applications using Agile methodologies.
+              I contribute innovative solutions across startups and enterprises.
             </p>
 
             {/* Personal Info - Refined Blobs (Flex Layout) */}

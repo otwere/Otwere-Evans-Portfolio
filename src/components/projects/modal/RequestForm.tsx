@@ -36,7 +36,7 @@ export const RequestForm = ({ formLogic, onClose, forwardedRef }: RequestFormPro
             <div className="flex-1 overflow-y-auto p-6 space-y-4 scroll-smooth">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="space-y-2">
-                        <label className="block text-xs font-semibold text-slate-700 uppercase tracking-wider">
+                        <label className="block text-xs font-semibold text-slate-800 uppercase tracking-wider">
                             Full Name
                         </label>
                         <input
@@ -50,7 +50,7 @@ export const RequestForm = ({ formLogic, onClose, forwardedRef }: RequestFormPro
                         />
                     </div>
                     <div className="space-y-2">
-                        <label className="block text-xs font-semibold text-slate-700 uppercase tracking-wider">
+                        <label className="block text-xs font-semibold text-slate-800 uppercase tracking-wider">
                             Email Address
                         </label>
                         <input
@@ -65,7 +65,7 @@ export const RequestForm = ({ formLogic, onClose, forwardedRef }: RequestFormPro
                 </div>
 
                 <div className="space-y-2">
-                    <label className="block text-xs font-semibold text-slate-700 uppercase tracking-wider">
+                    <label className="block text-xs font-semibold text-slate-800 uppercase tracking-wider">
                         Phone Number
                     </label>
                     <input
@@ -80,7 +80,7 @@ export const RequestForm = ({ formLogic, onClose, forwardedRef }: RequestFormPro
 
                 <div className="space-y-2">
                     <div className="flex items-center justify-between">
-                        <label className="block text-xs font-semibold text-slate-700 uppercase tracking-wider">
+                        <label className="block text-xs font-semibold text-slate-800 uppercase tracking-wider">
                             Your Budget
                         </label>
                     </div>
@@ -133,7 +133,7 @@ export const RequestForm = ({ formLogic, onClose, forwardedRef }: RequestFormPro
                         {/* Budget Input */}
                         <div className="flex-1 relative">
                             <div className="absolute left-1.5 top-1/2 -translate-y-1/2 z-10">
-                                <span className="text-slate-700 font-semibold">
+                                <span className="text-slate-800 font-semibold">
                                     {formData.selectedCurrency.symbol}
                                 </span>
                             </div>

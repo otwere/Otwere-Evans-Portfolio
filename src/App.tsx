@@ -45,7 +45,7 @@ function AppShell() {
         aria-label="Toggle Menu"
         aria-expanded={isOpen}
         aria-controls="site-drawer"
-        className="fixed left-4 top-4 z-30 rounded-lg border border-slate-200/50 bg-white/80 backdrop-blur-md p-2.5 text-slate-700 md:hidden hover:bg-white transition-colors"
+        className="fixed left-4 top-4 z-30 rounded-lg border border-slate-200/50 bg-white/80 backdrop-blur-md p-2.5 text-slate-800 md:hidden hover:bg-white transition-colors"
         onClick={toggleOpen}
       >
         <RiMenuLine className="h-5 w-5" />

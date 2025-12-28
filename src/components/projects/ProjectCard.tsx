@@ -80,7 +80,7 @@ export const ProjectCard = memo(({ project, index, onOpenModal }: ProjectCardPro
                         {project.technologies.map((tech) => (
                             <div
                                 key={tech}
-                                className="inline-flex items-center gap-1 px-2 py-1 rounded-md bg-slate-100 text-xs text-slate-700"
+                                className="inline-flex items-center gap-1 px-2 py-1 rounded-md bg-slate-100 text-xs text-slate-800"
                             >
                                 <TechnologyIcon tech={tech} />
                                 <span>{tech}</span>

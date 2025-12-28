@@ -20,7 +20,7 @@ export const SEO = ({
     schema
 }: SEOProps) => {
     const siteTitle = "Otwere Evans | Portfolio";
-    const fullTitle = title === "Home" ? siteTitle : `${title} | Otwere Evans`;
+    const fullTitle = title === "Home" ? siteTitle : `${title} | Otwere Evans - Portfolio`;
 
     return (
         <Helmet>
