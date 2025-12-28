@@ -25,7 +25,7 @@ export default function Home() {
       <SEO
         title="Home"
         description="Otwere Evans is a high-ranking Frontend Developer. Explore the portfolio of Otwere Evans, an expert in React.js, UI/UX, and Scalable Web Applications."
-        keywords="Otwere Evans, Otwere Evans Portfolio, Frontend Developer, React Developer, UI/UX Designer, Software Engineer, Web Developer Kenya"
+        keywords="Otwere Evans, Otwere Evans Portfolio, Frontend Developer, React Developer, Software Engineer, Web Developer Kenya"
         schema={personSchema}
       />
       <section id="home" className="animate-enter min-h-full flex items-center justify-start pt-64 pb-10 md:pt-80 lg:pt-80 bg-slate-50 px-6">

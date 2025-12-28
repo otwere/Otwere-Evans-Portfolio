@@ -31,17 +31,17 @@ export default function About() {
           </div>
 
           {/* Main Content Card */}
-          <div className="relative mb-12 overflow-hidden rounded-xl bg-white/80 backdrop-blur-sm p-8 shadow-none shadow-indigo-100/50 border border-white/20">
+          <div className="relative mb-12 overflow-hidden rounded-xl bg-white/80 backdrop-blur-sm p-8 shadow-none shadow-indigo-100/50 border border-white/20 mx-6">
             {/* Floating elements */}
             <div className="absolute -top-6 -right-6 h-12 w-12 rounded-full bg-gradient-to-br from-indigo-400 to-purple-400"></div>
             <div className="absolute -bottom-6 -left-6 h-12 w-12 rounded-full bg-gradient-to-br from-cyan-400 to-blue-400"></div>
 
             <p className="relative text-lg leading-relaxed text-slate-700">
               I'm <strong className="font-bold text-indigo-600">Otwere Evans</strong>, Front-End Software Developer experienced in building high-performance user interfaces.
-              I transform ideas into seamless digital experiences using React.js, TypeScript,
+              I transform ideas into seamless digital experiences using React.js,TypeScript,
               Tailwindcss and Next.js to deliver exceptional interactions.
-              With a strong foundation in UI/UX and performance optimization, I develop scalable, consumer-centric applications using Agile methodologies.
-              As I grow, I'm expanding into full-stack development to contribute innovative solutions across startups and enterprises.
+               I develop scalable, Performance optimization, consumer-centric applications using Agile methodologies.
+               I contribute innovative solutions across startups and enterprises.
             </p>
 
             {/* Personal Info - Refined Blobs (Flex Layout) */}
@@ -144,7 +144,7 @@ export default function About() {
           </div>
 
           {/* Skills Section */}
-          <div className="mb-12">
+          <div className="mb-12 mx-4">
             <h2 className="mb-8 text-center text-3xl font-bold text-slate-800">
               Technical <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">Expertise</span>
             </h2>
@@ -241,7 +241,7 @@ export default function About() {
                 <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-emerald-500 to-teal-500 text-white">
                   <FaGraduationCap className="h-6 w-6" />
                 </div>
-                <h2 className="text-2xl font-bold text-slate-800 ">Skill-(UPS)</h2>
+                <h2 className="text-2xl font-bold text-slate-800 ">Education</h2>
               </div>
 
               <div className="relative ml-3 border-l-2 border-indigo-200 space-y-8 pb-8">
@@ -316,7 +316,7 @@ export default function About() {
             </div>
 
             {/* Experience */}
-            <div>
+            <div className='lg:mx-4'>
               <div className="mb-6 flex items-center gap-3">
                 <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-orange-500 to-red-500 text-white">
                   <FaBriefcase className="h-6 w-6" />
