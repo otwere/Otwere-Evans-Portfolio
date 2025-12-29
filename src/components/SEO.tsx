@@ -10,12 +10,14 @@ type SEOProps = {
     schema?: any;
 };
 
+import { SITE_URL } from "../data/site";
+
 export const SEO = ({
     title,
     description,
     keywords,
     image = "/img/Otwere-Pic.jpg",
-    url = "https://otwere.netlify.app",
+    url = SITE_URL,
     type = "website",
     schema
 }: SEOProps) => {

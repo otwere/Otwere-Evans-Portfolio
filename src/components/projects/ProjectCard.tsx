@@ -2,6 +2,8 @@ import { FaCode, FaProjectDiagram, FaExternalLinkAlt } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
 import type { Project } from "../../types/project";
 import { TechnologyIcon } from "./TechnologyIcon";
+import { ProjectDescription } from "./ProjectDescription";
+import { ProjectImage } from "./ProjectImage";
 import { memo } from "react";
 
 type ProjectCardProps = {
@@ -27,20 +29,9 @@ export const ProjectCard = memo(({ project, index, onOpenModal }: ProjectCardPro
             )}
 
             {/* Image Container */}
-            <div className="relative h-48 sm:h-56 w-full overflow-hidden bg-gradient-to-r from-slate-50 to-slate-100">
-                <img
-                    src={project.image}
-                    alt={project.title}
-                    className="h-full w-full object-cover transition-transform duration-700 md:group-hover:scale-110"
-                    loading="lazy"
-                    onError={(e) => {
-                        e.currentTarget.src =
-                            "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='225' viewBox='0 0 400 225'%3E%3Crect width='400' height='225' fill='%23f8fafc'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial' font-size='16' fill='%2394a3b8' text-anchor='middle' dominant-baseline='middle'%3EProject Image%3C/text%3E%3C/svg%3E";
-                    }}
-                />
-                {/* Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-white/60 via-transparent to-transparent opacity-0 md:group-hover:opacity-100 transition-opacity duration-500"></div>
-            </div>
+
+            {/* Image Container */}
+            <ProjectImage image={project.image} title={project.title} category={project.category} />
 
             {/* Content */}
             <div className="p-5 sm:p-6">
@@ -48,31 +39,8 @@ export const ProjectCard = memo(({ project, index, onOpenModal }: ProjectCardPro
                     {project.title}
                 </h2>
 
-                <div className="space-y-1 mb-3 text-sm text-slate-600">
-                    {project.description.split('\n').map((line, i) => {
-                        const trimmed = line.trim();
-                        if (!trimmed) return <div key={i} className="h-1"></div>;
 
-                        if (trimmed.startsWith('•') || trimmed.startsWith('-')) {
-                            return (
-                                <div key={i} className="flex items-start gap-2 pl-1 group/item hover:bg-slate-50 p-0.5 rounded-lg transition-colors -mx-1.5">
-                                    <div className="mt-2 h-2 w-2 shrink-0 rounded-full bg-gradient-to-br from-indigo-500 to-purple-500 shadow-sm shadow-indigo-200 group-hover/item:scale-110 transition-transform"></div>
-                                    <span className="flex-1 text-[16px]  leading-relaxed text-slate-600 font-normal">{trimmed.substring(1).trim()}</span>
-                                </div>
-                            );
-                        }
-
-                        if (trimmed.endsWith(':')) {
-                            return (
-                                <h3 key={i} className="font-bold text-base text-indigo-900 pt-0 pb-1">
-                                    {trimmed}
-                                </h3>
-                            );
-                        }
-
-                        return <p key={i} className="text-[15px] leading-relaxed text-slate-600">{trimmed}</p>;
-                    })}
-                </div>
+                <ProjectDescription description={project.description} />
 
                 {/* Technologies */}
                 {project.technologies && (

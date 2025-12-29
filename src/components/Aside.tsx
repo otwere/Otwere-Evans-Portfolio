@@ -1,9 +1,10 @@
 import { useEffect, useRef, memo } from "react";
 import type { Section } from "../hooks/useSection";
 import { useSidebar } from "../context/SidebarContext";
-import { FaHome, FaUser, FaProjectDiagram, FaEnvelope, FaGithub, FaLinkedin, FaFileDownload } from 'react-icons/fa';
+import { FaHome, FaUser, FaProjectDiagram, FaEnvelope } from 'react-icons/fa';
 import { SiTypescript, SiReact, SiNextdotjs, SiTailwindcss, SiNodedotjs, SiExpress } from 'react-icons/si';
 import { RiCloseLine, RiArrowLeftSLine, RiArrowRightSLine } from 'react-icons/ri';
+import { socialLinks, resumeLink } from "../data/socials";
 
 // --- Configuration ---
 
@@ -14,30 +15,7 @@ const NAV_ITEMS = [
   { id: "contact", label: "Contact", icon: FaEnvelope },
 ] as const;
 
-const SOCIAL_LINKS = [
-  {
-    id: "github",
-    href: "https://github.com/otwere",
-    label: "GitHub Profile",
-    icon: FaGithub,
-    colorClass: "text-slate-400 group-hover:text-white"
-  },
-  {
-    id: "linkedin",
-    href: "https://www.linkedin.com/in/otwere-evans/",
-    label: "LinkedIn Profile",
-    icon: FaLinkedin,
-    colorClass: "text-slate-400 group-hover:text-white"
-  },
-  {
-    id: "resume",
-    href: "https://drive.google.com/file/d/1Sxf5ova67vlXEuBCC1Q_ZD54TOTq8Env/view?usp=drive_link",
-    label: "Download CV",
-    icon: FaFileDownload,
-    colorClass: "text-indigo-300 group-hover:text-indigo-200",
-    bgClass: "bg-linear-to-r from-indigo-500/20 to-purple-500/20 hover:from-indigo-500/30 hover:to-purple-500/30"
-  },
-];
+
 
 const TECH_BADGES = [
   { icon: SiReact, label: "React.js", color: "text-cyan-500" },
@@ -233,24 +211,33 @@ export default function Sidebar({ current, onNavigate }: Props) {
               </div>
             )}
             <div className={`flex ${isCollapsed ? 'flex-col gap-2 px-2' : 'gap-3 px-2'}`}>
-              {SOCIAL_LINKS.map((link) => {
-                const Icon = link.icon;
+
+              {[...socialLinks, resumeLink].map((link) => {
+                const isResume = link.id === 'resume';
+                const colorClass = isResume ? (link as any).sidebarColor : link.sidebarColor;
+                const bgClass = isResume ? (link as any).sidebarBg : "bg-white border border-slate-200 hover:bg-slate-50";
+                // Note: The original code had special bg handling for resume. 
+                // I need to ensure the styling is preserved.
+                // Original resume loop:
+                // bgClass existed only on resume. Others were default.
+
                 return (
                   <a
                     key={link.id}
                     href={link.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`group ${isCollapsed ? 'p-3' : 'p-3.5'} rounded-xl bg-white border border-slate-200 text-center  hover:bg-slate-50 transition-all duration-300 hover:scale-95`}
+                    className={`group ${isCollapsed ? 'p-3' : 'p-3.5'} rounded-xl text-center transition-all duration-300 hover:scale-95 ${bgClass ? bgClass : "bg-white border border-slate-200 hover:bg-slate-50"}`}
                     aria-label={link.label}
                     title={link.label}
                   >
-                    <Icon className={`mx-auto h-5 w-5 transition-colors text-slate-400 group-hover:text-slate-600`} />
+                    <link.icon className={`mx-auto h-5 w-5 transition-colors ${colorClass}`} />
                   </a>
                 );
               })}
             </div>
           </div>
+
 
           {/* Footer */}
           {!isCollapsed && (
@@ -266,7 +253,7 @@ export default function Sidebar({ current, onNavigate }: Props) {
 
         {/* Accent Line */}
         <div className="absolute top-0 bottom-0 right-0 w-px bg-gradient-to-b from-transparent via-slate-200 to-transparent"></div>
-      </aside>
+      </aside >
     </>
   );
 }

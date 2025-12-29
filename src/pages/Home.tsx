@@ -1,16 +1,19 @@
 import { SEO } from "../components/SEO";
+import { socialLinks } from "../data/socials";
+
+import { SITE_URL } from "../data/site";
 
 export default function Home() {
   const personSchema = {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Otwere Evans",
-    "url": "https://otwere.netlify.app",
-    "image": "https://otwere.netlify.app/img/Otwere-Pic.jpg",
+    "url": SITE_URL,
+    "image": `${SITE_URL}/img/Otwere-Pic.jpg`,
     "sameAs": [
       "https://www.linkedin.com/in/otwere-evans/",
       "https://github.com/otwere",
-      "https://otwere.netlify.app"
+      SITE_URL
     ],
     "jobTitle": "Frontend Software Developer",
     "worksFor": {
@@ -42,15 +45,18 @@ export default function Home() {
           <h1 className="text-3xl font-bold text-slate-800">Otwere Evans</h1>
           <p className="mt-2 text-lg sm:text-lg font-medium text-slate-600">Software Developer, Specializing in Front-end Development</p>
           <div className="mt-5 flex items-center justify-center gap-3">
-            <a aria-label="LinkedIn" rel="noopener noreferrer" href="https://www.linkedin.com/in/otwere-evans/" target="_blank" className="link-icon">
-              <i className="fa fa-linkedin" />
-            </a>
-            <a aria-label="Email" rel="noopener noreferrer" href="mailto:otweree@gmail.com" target="_blank" className="link-icon">
-              <i className="fa fa-envelope-o" />
-            </a>
-            <a aria-label="GitHub" rel="noopener noreferrer" href="https://github.com/otwere" target="_blank" className="link-icon">
-              <i className="fa fa-github" />
-            </a>
+            {socialLinks.map((link) => (
+              <a
+                key={link.id}
+                aria-label={link.id}
+                rel="noopener noreferrer"
+                href={link.href}
+                target="_blank"
+                className={link.className}
+              >
+                <link.icon />
+              </a>
+            ))}
           </div>
         </div>
       </section>
