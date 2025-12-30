@@ -8,7 +8,7 @@ type ProjectImageProps = {
 
 export const ProjectImage = memo(({ image, title }: ProjectImageProps) => {
     return (
-        <div className="relative h-48 sm:h-56 w-full overflow-hidden bg-gradient-to-r from-slate-50 to-slate-100">
+        <div className="relative h-48 sm:h-56 w-full overflow-hidden bg-linear-to-r from-slate-50 to-slate-100">
             <img
                 src={image}
                 alt={title}
@@ -20,7 +20,7 @@ export const ProjectImage = memo(({ image, title }: ProjectImageProps) => {
                 }}
             />
             {/* Gradient Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-white/60 via-transparent to-transparent opacity-0 md:group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div className="absolute inset-0 bg-linear-to-t from-white/60 via-transparent to-transparent opacity-0 md:group-hover:opacity-100 transition-opacity duration-500"></div>
         </div>
     );
 });

@@ -13,26 +13,26 @@ export default function About() {
       />
       <section id="about" className="animate-enter relative overflow-hidden bg-slate-50 px-2 py-20">
         {/* Decorative elements */}
-        <div className="absolute -top-20 -right-20 h-64 w-64 rounded-full bg-gradient-to-r from-indigo-300/20 to-purple-300/20 blur-3xl"></div>
-        <div className="absolute -bottom-20 -left-20 h-64 w-64 rounded-full bg-gradient-to-r from-cyan-300/20 to-blue-300/20 blur-3xl"></div>
+        <div className="absolute -top-20 -right-20 h-64 w-64 rounded-full bg-linear-to-r from-indigo-300/20 to-purple-300/20 blur-3xl"></div>
+        <div className="absolute -bottom-20 -left-20 h-64 w-64 rounded-full bg-linear-to-r from-cyan-300/20 to-blue-300/20 blur-3xl"></div>
 
         <div className="relative mx-auto w-full max-w-full">
           {/* Header with animation */}
           <div className="mb-12 text-center">
             <div className="inline-flex items-center gap-2">
-              <div className="h-px w-12 bg-gradient-to-r from-transparent via-indigo-500 to-transparent"></div>
-              <h1 className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-3xl sm:text-3xl font-bold text-transparent">
+              <div className="h-px w-12 bg-linear-to-r from-transparent via-indigo-500 to-transparent"></div>
+              <h1 className="bg-linear-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-3xl sm:text-3xl font-bold text-transparent">
                 About Me
               </h1>
-              <div className="h-px w-12 bg-gradient-to-r from-transparent via-purple-500 to-transparent"></div>
+              <div className="h-px w-12 bg-linear-to-r from-transparent via-purple-500 to-transparent"></div>
             </div>
           </div>
 
           {/* Main Content Card */}
           <div className="relative mb-12 overflow-hidden rounded-xl bg-white/80 backdrop-blur-sm p-8 shadow-none shadow-indigo-100/50 border border-white/20 mx-6">
             {/* Floating elements */}
-            <div className="absolute -top-6 -right-6 h-12 w-12 rounded-full bg-gradient-to-br from-indigo-400 to-purple-400"></div>
-            <div className="absolute -bottom-6 -left-6 h-12 w-12 rounded-full bg-gradient-to-br from-cyan-400 to-blue-400"></div>
+            <div className="absolute -top-6 -right-6 h-12 w-12 rounded-full bg-linear-to-br from-indigo-400 to-purple-400"></div>
+            <div className="absolute -bottom-6 -left-6 h-12 w-12 rounded-full bg-linear-to-br from-cyan-400 to-blue-400"></div>
 
             <p className="relative text-lg leading-relaxed text-slate-800">
               I'm <strong className="font-bold text-indigo-600">Otwere Evans</strong>, Front-End Software Developer experienced in building high-performance user interfaces.
@@ -104,7 +104,7 @@ export default function About() {
                 href="https://drive.google.com/file/d/1Sxf5ova67vlXEuBCC1Q_ZD54TOTq8Env/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-indigo-600 to-purple-600 px-8 py-3 font-semibold text-white  transition-all duration-300 hover:scale-95"
+                className="group inline-flex items-center gap-2 rounded-full bg-linear-to-r from-indigo-600 to-purple-600 px-8 py-3 font-semibold text-white  transition-all duration-300 hover:scale-95"
               >
                 <span>Download CV</span>
                 <FaDownload className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
@@ -115,7 +115,7 @@ export default function About() {
           {/* Skills Section */}
           <div className="mb-12 mx-4">
             <h2 className="mb-8 text-center text-3xl font-bold text-slate-800">
-              Technical <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">Expertise</span>
+              Technical <span className="bg-linear-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">Expertise</span>
             </h2>
 
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4">
@@ -124,9 +124,9 @@ export default function About() {
                   key={category.title}
                   className="group relative overflow-hidden rounded-2xl bg-white p-6 shadow-none shadow-slate-200/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-none"
                 >
-                  <div className="absolute top-0 left-0 h-1 w-full bg-gradient-to-r from-indigo-500 via-purple-500 to-indigo-500"></div>
+                  <div className="absolute top-0 left-0 h-1 w-full bg-linear-to-r from-indigo-500 via-purple-500 to-indigo-500"></div>
                   <div className="mb-6 flex items-center gap-3">
-                    <div className={`flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br ${category.gradient} text-white`}>
+                    <div className={`flex h-12 w-12 items-center justify-center rounded-xl bg-linear-to-br ${category.gradient} text-white`}>
                       <category.icon className="text-2xl" />
                     </div>
                     <h3 className="text-lg font-bold text-slate-800">{category.title}</h3>
@@ -137,7 +137,7 @@ export default function About() {
                         key={skill.name}
                         className="group/item flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1.5 shadow-none transition-all duration-300 hover:scale-105 hover:border-indigo-300 hover:shadow-none"
                       >
-                        <div className={`flex h-6 w-6 items-center justify-center rounded-full bg-gradient-to-br ${category.gradient} text-white text-xs`}>
+                        <div className={`flex h-6 w-6 items-center justify-center rounded-full bg-linear-to-br ${category.gradient} text-white text-xs`}>
                           <skill.icon />
                         </div>
                         <span className="text-sm font-medium text-slate-600 group-hover/item:text-slate-900">{skill.name}</span>
@@ -154,7 +154,7 @@ export default function About() {
             {/* Education */}
             <div>
               <div className="mb-6 flex items-center gap-3">
-                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-emerald-500 to-teal-500 text-white">
+                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-linear-to-br from-emerald-500 to-teal-500 text-white">
                   <FaGraduationCap className="h-6 w-6" />
                 </div>
                 <h2 className="text-2xl font-bold text-slate-800 ">Education</h2>
@@ -170,7 +170,7 @@ export default function About() {
             {/* Experience */}
             <div className='lg:mx-4'>
               <div className="mb-6 flex items-center gap-3">
-                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-orange-500 to-red-500 text-white">
+                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-linear-to-br from-orange-500 to-red-500 text-white">
                   <FaBriefcase className="h-6 w-6" />
                 </div>
                 <h2 className="text-2xl font-bold text-slate-800">Experience</h2>
