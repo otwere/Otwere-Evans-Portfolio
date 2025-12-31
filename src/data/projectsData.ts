@@ -11,7 +11,7 @@ export const projects: Project[] = [
   {
     title: "Hospital Website & Booking System",
     description:
-      "Developed a user-friendly hospital website for MedicarePlus featuring a seamless booking management system.\n\nKey Features:\n• Streamlines appointment scheduling\n• Enhances overall patient experience\n• Supports multiple secure payment methods (Insurance, M-pesa, credit card)\n• Improves accessibility and supports efficient hospital operations",
+      "Developed a user-friendly hospital website for MedicarePlus featuring a seamless booking management system.\n\nKey Features:\n• Streamlines appointment scheduling\n• Enhances overall patient experience\n• Supports secure payment methods (Insurance, M-pesa)\n• Improves accessibility and supports efficient hospital operations",
     image: "/img/medicare.png",
     link: "https://medicarepluske.netlify.app",
     technologies: ["React", "TypeScript", "Tailwind CSS", "Node.js"],
