@@ -14,7 +14,7 @@ export const ProjectDescription = memo(({ description }: ProjectDescriptionProps
                 if (trimmed.startsWith('•') || trimmed.startsWith('-')) {
                     return (
                         <div key={i} className="flex items-start gap-2 pl-1 group/item hover:bg-slate-50 p-0.5 rounded-lg transition-colors -mx-1.5">
-                            <div className="mt-2 h-2 w-2 shrink-0 rounded-full bg-gradient-to-br from-indigo-500 to-purple-500 shadow-sm shadow-indigo-200 group-hover/item:scale-110 transition-transform"></div>
+                            <div className="mt-2 h-2 w-2 shrink-0 rounded-full bg-linear-to-br from-indigo-500 to-purple-500 shadow-sm shadow-indigo-200 group-hover/item:scale-110 transition-transform"></div>
                             <span className="flex-1 text-[16px] leading-relaxed text-slate-600 font-normal">{trimmed.substring(1).trim()}</span>
                         </div>
                     );

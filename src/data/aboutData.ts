@@ -1,5 +1,6 @@
 import { FaCode, FaCogs, FaGlobe, FaBriefcase } from 'react-icons/fa';
-import { SiJavascript, SiHtml5, SiRuby, SiTypescript, SiMongodb, SiMysql, SiNodedotjs, SiGraphql, SiReact, SiNextdotjs, SiTailwindcss, SiLinux, SiGithub, SiExpress, SiJest } from 'react-icons/si';
+import { SiJavascript, SiHtml5, SiTypescript, SiMongodb, SiMysql, SiNodedotjs, SiGraphql, SiReact, SiNextdotjs, SiTailwindcss, SiGithub, SiExpress, SiJest } from 'react-icons/si';
+// import {  SiRuby,SiLinux  } from 'react-icons/si';
 import { RiMailLine, RiMapPinLine, RiUserLine, RiBookLine } from 'react-icons/ri';
 import { IoServerOutline } from 'react-icons/io5';
 import { MdDataObject, MdApi, MdSettings, MdBuild, MdLeaderboard, MdChat, MdUpdate, MdTimer } from 'react-icons/md';
@@ -42,7 +43,7 @@ export const skillsData = [
         skills: [
             { name: "Javascript", icon: SiJavascript },
             { name: "HTML5 & CSS3", icon: SiHtml5 },
-            { name: "Ruby", icon: SiRuby },
+            // { name: "Ruby", icon: SiRuby },
             { name: "Typescript", icon: SiTypescript },
             { name: "MongoDB", icon: SiMongodb },
             { name: "MySQL", icon: SiMysql },
@@ -59,7 +60,7 @@ export const skillsData = [
             { name: "React.js", icon: SiReact },
             { name: "Next.js", icon: SiNextdotjs },
             { name: "Tailwindcss", icon: SiTailwindcss },
-            { name: "Linux", icon: SiLinux },
+            // { name: "Linux", icon: SiLinux },
             { name: "Git & Github", icon: SiGithub },
         ],
         gradient: "from-cyan-500 to-blue-500"

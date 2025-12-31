@@ -64,7 +64,7 @@ export const ProjectCard = memo(({ project, index, onOpenModal }: ProjectCardPro
                             href={project.link}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="group/btn inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-indigo-600 to-purple-600 px-4 sm:px-5 py-2 sm:py-2.5 text-sm font-semibold text-white transition-transform duration-300 md:hover:scale-95"
+                            className="group/btn inline-flex items-center gap-2 rounded-full bg-linear-to-r from-indigo-600 to-purple-600 px-4 sm:px-5 py-2 sm:py-2.5 text-sm font-semibold text-white transition-transform duration-300 md:hover:scale-95"
                         >
                             <span>View Live</span>
                             <FiExternalLink className="h-3 w-3 transition-transform duration-300 md:group-hover/btn:translate-x-1" />
@@ -73,7 +73,7 @@ export const ProjectCard = memo(({ project, index, onOpenModal }: ProjectCardPro
                         <button
                             type="button"
                             onClick={() => onOpenModal(project)}
-                            className="group/btn inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-indigo-600 to-purple-600 px-4 sm:px-5 py-2 sm:py-2.5 text-sm font-semibold text-white transition-transform duration-300 md:hover:scale-95"
+                            className="group/btn inline-flex items-center gap-2 rounded-full bg-linear-to-r from-indigo-600 to-purple-600 px-4 sm:px-5 py-2 sm:py-2.5 text-sm font-semibold text-white transition-transform duration-300 md:hover:scale-95"
                         >
                             <span className="whitespace-nowrap">Request Code</span>
                             <FaCode className="h-3 w-3 transition-transform duration-300 md:group-hover/btn:translate-x-1" />
