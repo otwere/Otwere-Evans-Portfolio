@@ -101,7 +101,7 @@ export default function About() {
             {/* CTA Button */}
             <div className="relative mt-10 text-center">
               <a
-                href="https://drive.google.com/file/d/1Sxf5ova67vlXEuBCC1Q_ZD54TOTq8Env/view?usp=drive_link"
+                href="https://docs.google.com/document/d/1Zs-ZkdMmcRVHlNIjNMsdxCwMAc2iSon8OHmKuxATSKk/edit?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-flex items-center gap-2 rounded-full bg-linear-to-r from-indigo-600 to-purple-600 px-8 py-3 font-semibold text-white  transition-all duration-300 hover:scale-95"
