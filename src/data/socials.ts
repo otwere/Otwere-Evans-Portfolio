@@ -34,7 +34,7 @@ export const socialLinks = [
 
 export const resumeLink = {
   id: "resume",
-  href: "https://drive.google.com/file/d/1Sxf5ova67vlXEuBCC1Q_ZD54TOTq8Env/view?usp=drive_link",
+  href: "https://docs.google.com/document/d/1Zs-ZkdMmcRVHlNIjNMsdxCwMAc2iSon8OHmKuxATSKk/edit?usp=sharing",
   label: "Download CV",
   icon: FaFileDownload,
   sidebarColor: "text-indigo-300 group-hover:text-indigo-200",
