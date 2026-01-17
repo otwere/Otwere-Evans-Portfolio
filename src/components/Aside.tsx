@@ -1,3 +1,4 @@
+import type { IconType } from "react-icons";
 import { useEffect, useRef, memo } from "react";
 import type { Section } from "../hooks/useSection";
 import { useSidebar } from "../context/SidebarContext";
@@ -30,14 +31,14 @@ const TECH_BADGES = [
 
 const UserProfile = memo(({ collapsed, onNavigate }: { collapsed: boolean; onNavigate: (s: Section) => void }) => (
   <header className={`pt-12 pb-8 relative ${collapsed ? 'px-0' : ''}`}>
-    <div className="absolute -top-4 -right-4 h-20 w-20 bg-gradient-to-r from-indigo-500/10 to-purple-500/10 rounded-full blur-2xl"></div>
+    <div className="absolute -top-4 -right-4 h-20 w-20 bg-linear-to-r from-indigo-500/10 to-purple-500/10 rounded-full blur-2xl"></div>
     <div className={`relative ${collapsed ? 'flex justify-center' : ''}`}>
       <button
         onClick={() => onNavigate("home")}
         className={`inline-flex items-center gap-3 group text-left ${collapsed ? 'flex-col' : ''}`}
       >
         <div className="relative">
-          <div className={`${collapsed ? 'h-12 w-10 mt-2' : 'h-12 w-12'} rounded-2xl bg-gradient-to-r from-indigo-600 to-purple-600 flex items-center justify-center transition-all duration-300 group-hover:scale-95 shadow-indigo-500/20`}>
+          <div className={`${collapsed ? 'h-12 w-10 mt-2' : 'h-12 w-12'} rounded-2xl bg-linear-to-r from-indigo-600 to-purple-600 flex items-center justify-center transition-all duration-300 group-hover:scale-95 shadow-indigo-500/20`}>
             <span className="text-lg font-bold text-white">OE</span>
           </div>
         </div>
@@ -60,8 +61,8 @@ const UserProfile = memo(({ collapsed, onNavigate }: { collapsed: boolean; onNav
     {!collapsed && (
       <div className="my-2 pb-2 overflow-hidden w-full relative">
         {/* Gradient Masks for smooth fade effect */}
-        <div className="absolute left-0 top-0 bottom-0 w-4 bg-gradient-to-r from-slate-50 to-transparent z-10"></div>
-        <div className="absolute right-0 top-0 bottom-0 w-4 bg-gradient-to-l from-slate-50 to-transparent z-10"></div>
+        <div className="absolute left-0 top-0 bottom-0 w-4 bg-linear-to-r from-slate-50 to-transparent z-10"></div>
+        <div className="absolute right-0 top-0 bottom-0 w-4 bg-linear-to-l from-slate-50 to-transparent z-10"></div>
 
         <div className="animate-marquee gap-3">
           {[...TECH_BADGES, ...TECH_BADGES, ...TECH_BADGES, ...TECH_BADGES].map((badge, i) => (
@@ -76,7 +77,7 @@ const UserProfile = memo(({ collapsed, onNavigate }: { collapsed: boolean; onNav
 ));
 
 
-const TechBadge = ({ icon: Icon, label, color }: { icon: any; label: string; color: string }) => (
+const TechBadge = ({ icon: Icon, label, color }: { icon: IconType; label: string; color: string }) => (
   <div className="inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-full bg-white border border-slate-200  transition-transform hover:scale-105">
     <Icon className={`h-3.5 w-3.5 ${color}`} />
     <span className="text-xs text-slate-600">{label}</span>
@@ -213,9 +214,8 @@ export default function Sidebar({ current, onNavigate }: Props) {
             <div className={`flex ${isCollapsed ? 'flex-col gap-2 px-2' : 'gap-3 px-2'}`}>
 
               {[...socialLinks, resumeLink].map((link) => {
-                const isResume = link.id === 'resume';
-                const colorClass = isResume ? (link as any).sidebarColor : link.sidebarColor;
-                const bgClass = isResume ? (link as any).sidebarBg : "bg-white border border-slate-200 hover:bg-slate-50";
+                const colorClass = link.sidebarColor;
+                const bgClass = link.sidebarBg;
                 // Note: The original code had special bg handling for resume. 
                 // I need to ensure the styling is preserved.
                 // Original resume loop:
@@ -252,7 +252,7 @@ export default function Sidebar({ current, onNavigate }: Props) {
         </div>
 
         {/* Accent Line */}
-        <div className="absolute top-0 bottom-0 right-0 w-px bg-gradient-to-b from-transparent via-slate-200 to-transparent"></div>
+        <div className="absolute top-0 bottom-0 right-0 w-px bg-linear-to-b from-transparent via-slate-200 to-transparent"></div>
       </aside >
     </>
   );

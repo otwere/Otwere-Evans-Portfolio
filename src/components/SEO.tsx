@@ -7,7 +7,7 @@ type SEOProps = {
     image?: string;
     url?: string;
     type?: string;
-    schema?: any;
+    schema?: Record<string, unknown>;
 };
 
 import { SITE_URL } from "../data/site";
